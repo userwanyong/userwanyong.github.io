@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const base = '/blog/'
+const base = '/userwanyong.github.io/'
 export default defineConfig({
   base,
   title: "YONG",

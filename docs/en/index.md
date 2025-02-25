@@ -28,10 +28,10 @@ features:
     title: Redis
     details: 让我们一起来学习Redis的使用方式吧
     link: /study/redis
-  - icon: 👋
-    title: 待续……
-    details: 让我们一起来学习……的使用方式吧
-    link: /
+  - icon: 🛠️
+    title: Elasticsearch
+    details: 让我们一起来学习Elasticsearch的使用方式吧
+    link: /study/elasticsearch
 ---
 
 

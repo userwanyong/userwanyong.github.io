@@ -1,34 +1,53 @@
-/* .vitepress/theme/style.css*/
-
+/* 美化：https://vitepress.yiov.top/style.html*/
 :root {
     /*修改主页title颜色*/
     --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
     /* 修改侧边栏宽度 */
     --vp-sidebar-width: 200px;
-    --vp-layout-max-width: 1600px
+    --vp-layout-max-width: 1600px;
+
+    /* 首页下滑后导航透明 */
+    .VPNavBar:not(.has-sidebar):not(.home.top) {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+    /* 搜索框透明 */
+    .DocSearch-Button {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    /* Feature透明 */
+    .VPFeature {
+        border: none;
+        box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+        background-color: transparent;
+    }
+
+    /* 文档页侧边栏顶部透明 */
+    .curtain {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (min-width: 960px) {
+
+        /* 文档页导航中间透明 */
+        .VPNavBar:not(.home.top) .content-body {
+            background-color: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+        }
+    }
+
+    /* 移动端大纲栏透明 */
+    .VPLocalNav {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
 }
 
-/*!* 文档宽度 *!*/
-/*.VPDoc.has-aside .content-container[data-v-da69c9d5] {*/
-/*    max-width: 900px;*/
-/*}*/
-
-/*!* 导航栏左边的文字属性 *!*/
-/*.title[data-v-7dd8fa25] {*/
-/*    font-size: 20px;*/
-/*    color: rgb(19, 191, 234);*/
-/*}*/
-
-/*!* 导航栏右边的文字属性 *!*/
-/*.VPNavBarMenuLink[data-v-578ccdd5] {*/
-/*    color: var(--vp-c-text-1);*/
-/*}*/
-
-/*!* 导航栏右边的文字选中时的颜色 *!*/
-/*.VPNavBarMenuLink.active[data-v-578ccdd5] {*/
-/*    color: rgb(19, 191, 234);*/
-/*}*/
 
 /* 主页头像属性 */
 .image-src {

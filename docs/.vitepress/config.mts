@@ -1,7 +1,25 @@
 import { defineConfig } from 'vitepress'
+import vitepressProtectPlugin from "vitepress-protect-plugin"
 
 const base = '/'
 export default defineConfig({
+  vite: {
+    plugins: [
+      vitepressProtectPlugin({
+        disableF12: true, // 禁用F12开发者模式
+        disableCopy: true, // 禁用文本复制
+        disableSelect: false, // 禁用文本选择
+      }),
+    ],
+  },
+  //markdown配置
+  markdown: {
+    lineNumbers: true,
+    image: {
+      // 开启图片懒加载
+      lazyLoading: true
+    },
+  },
   //多语言 (新建一个en文件夹，将docs下面的md文件[如index.md、study文件夹]复制进去即可)
   locales: {
     root: {
@@ -56,8 +74,25 @@ export default defineConfig({
       label: '目录' // 替换 On this page
     },
     nav: [
-      { text: '介绍', link: '/' },
-      { text: '教程', link: '/study/elasticsearch' }
+      { text: '首页', link: '/' },
+      { text: '教程',
+        items: [
+          {
+            text: '组件',
+            items: [
+              { text: 'Elasticsearch', link: '/study/elasticsearch' },
+              { text: 'RabbitMQ', link: '/study/rabbitmq' },
+            ]
+          },
+          {
+            text: '数据库',
+            items: [
+              { text: 'Mysql', link: '/study/mysql' },
+              { text: 'Redis', link: '/study/redis' },
+            ]
+          },
+        ],
+      }
     ],
     sidebar: [
       {

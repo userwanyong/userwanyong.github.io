@@ -71,7 +71,7 @@ export default defineConfig({
     },
     outline: {
       level: [2, 5],// 右侧边栏显示2-5级标题
-      label: '目录' // 替换 On this page
+      label: '大纲' // 替换 On this page
     },
     nav: [
       { text: '首页', link: '/' },
@@ -80,15 +80,15 @@ export default defineConfig({
           {
             text: '组件',
             items: [
-              { text: 'Elasticsearch', link: '/study/elasticsearch' },
-              { text: 'RabbitMQ', link: '/study/rabbitmq' },
+              { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
+              { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
             ]
           },
           {
             text: '数据库',
             items: [
-              { text: 'Mysql', link: '/study/mysql' },
-              { text: 'Redis', link: '/study/redis' },
+              { text: 'Mysql', link: '/study/database/mysql' },
+              { text: 'Redis', link: '/study/database/redis' },
             ]
           },
         ],
@@ -99,16 +99,16 @@ export default defineConfig({
         text: '组件',
         collapsed: false,
         items: [
-          { text: 'Elasticsearch', link: '/study/elasticsearch' },
-          { text: 'RabbitMQ', link: '/study/rabbitmq' },
+          { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
+          { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
         ]
       },
       {
         text: '数据库',
         collapsed: false,
         items: [
-          { text: 'Mysql', link: '/study/mysql' },
-          { text: 'Redis', link: '/study/redis' },
+          { text: 'Mysql', link: '/study/database/mysql' },
+          { text: 'Redis', link: '/study/database/redis' },
         ]
       }
     ],

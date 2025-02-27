@@ -1,9 +1,9 @@
 # RabbitMQ <Badge type="danger" text="new" />
 <Linkcard url="https://www.rabbitmq.com/" title="RobbitMQ官网" description="https://www.rabbitmq.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-26%20130648.png"></Linkcard>
 
-## 了解MQ
+## 1. 了解MQ
 mq的处理方式大多是异步调用的，我们先来聊聊同步与异步的区别
-### 同步调用 vs 异步调用
+### 1.1. 同步调用 vs 异步调用
 **同步调用**
 
 `优点：`
@@ -26,7 +26,7 @@ mq的处理方式大多是异步调用的，我们先来聊聊同步与异步的
 2. 不能确定下游服务是否执行成功
 3. 业务安全依赖于消息的可靠性
 
-### 常见的MQ
+### 1.2. 常见的MQ
 | | **<span style="color:rgb(0, 0, 0);">RabbitMQ</span>** | **<span style="color:rgb(0, 0, 0);">ActiveMQ</span>** | **<span style="color:rgb(0, 0, 0);">RocketMQ</span>** | **<span style="color:rgb(0, 0, 0);">Kafka</span>** |
 | :-: | :-: | :-: | :-: | :-: |
 | <span style="color:rgb(0, 0, 0);">公司/社区</span> | <span style="color:rgb(0, 0, 0);">Rabbit</span> | <span style="color:rgb(0, 0, 0);">Apache</span> | <span style="color:rgb(0, 0, 0);">阿里</span> | <span style="color:rgb(0, 0, 0);">Apache</span> |
@@ -38,7 +38,7 @@ mq的处理方式大多是异步调用的，我们先来聊聊同步与异步的
 | <span style="color:rgb(0, 0, 0);">消息可靠性</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">一般</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">一般</span> |
 
 
-## 安装
+## 2. 安装
 1. **拉取镜像（不指定版本的话，默认标签是latest，代表最新版）**
 ::: code-group
 ```bash
@@ -84,8 +84,8 @@ docker run \
 >
 > 重启容器：`docker restart mq`
 
-## 基础知识
-### 基本概念
+## 3. 基础知识
+### 3.1. 基本概念
 ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-26%20135745.png)
 + **publisher**：生产者，发消息的一方
 + **consumer**：消费者，收消息的一方
@@ -93,13 +93,13 @@ docker run \
 + **queue**：队列，存储消息（生产者投递的消息会暂存在消息队列中，等待消费者处理）
 + **virtual host**：虚拟主机，起到数据隔离的作用
 
-### 交换机类型
+### 3.2. 交换机类型
 + **fanout**：广播，将消息发送给每一个与之绑定的队列
 + **direct**：订阅，基于RoutingKey（路由key）发送给订阅了消息的队列
 + **topic**：通配符订阅，与Direct类似，只不过RoutingKey可以使用通配符
 + **headers**：头匹配，基于MQ的消息头匹配
 
-## 收发消息
+## 4. 收发消息
 `如果有多个消费者，队列默认给每个消费者的消息是平均的，后面有处理方式`
 
 1. **新建队列**
@@ -113,7 +113,7 @@ docker run \
 ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419016.png)
 
 
-## 数据隔离
+## 5. 数据隔离
 一套mq会有多个项目使用，为使各个项目之间互不干扰，需要进行数据隔离
 
 1. **创建用户**（将管理权限分离）
@@ -122,7 +122,7 @@ docker run \
 2. 登录新创建的用户，**创建虚拟主机**（将每个项目数据进行隔离）
 ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423681.png)
 
-## 在java中使用
+## 6. 在java中使用
 1. **引入依赖**
 
 ::: code-group
@@ -148,8 +148,8 @@ spring:
 ```
 :::
 
-### 创建交换机与队列及其绑定关系
-#### 使用Bean
+### 6.1. 创建交换机与队列及其绑定关系
+#### 6.1.1. 使用Bean
 `一般在消费者模块编写`
 
 ::: code-group
@@ -182,7 +182,7 @@ public class DirectConfig {
 ::: 
 
 
-#### 使用注解（方便）
+#### 6.1.2. 使用注解（方便）
 
 ::: code-group
 ```java
@@ -197,8 +197,8 @@ public void listenDirectQueue1(String msg){
 ```
 :::
 
-### 直接进行队列操作
-#### 1队列1消费
+### 6.2. 直接进行队列操作
+#### 6.2.1. 1队列1消费
 `一般测试时使用，很少在生产中使用`
 
 `发消息`
@@ -245,7 +245,7 @@ public class SpringRabbitListener {
 ```
 :::
 
-#### 1队列n消费
+#### 6.2.2. 1队列n消费
 只需要添加消费者的数量即可
 
 `两个消费者`
@@ -291,8 +291,8 @@ public class SpringRabbitListener {
 >```
 > :::
 
-### 交换机+队列
-#### fanout交换机
+### 6.3. 交换机+队列
+#### 6.3.1. fanout交换机
 假设`lottery-exchange-fanout`这个交换机绑定了`lottery-fanout-queue1`、`lottery-fanout-queue2`这两个队列
 
 `发消息`
@@ -324,7 +324,7 @@ public void listenFanoutQueue2(String msg) {
 ```
 :::
 
-#### direct交换机
+#### 6.3.2. direct交换机
 交换机与队列绑定的时候，指定一个`RoutingKey`，在发送消息到交换机的时候，也要指定`RoutingKey`，只有`RoutingKey`一致的队列才会收到消息
 
 假设`lottery-exchange-direct`这个交换机绑定了`lottery-direct-queue1`（bindingKey为blue和red）、`lottery-direct-queue2`（bindingKey为yellow和red）这两个队列
@@ -361,7 +361,7 @@ public void listenDirectQueue2(String msg) {
 
 此时，两个队列都能收到，但要将`RoutingKey`改为blue，则只有`lottery-direct-queue1`这个队列收到消息
 
-#### topic交换机
+#### 6.3.3. topic交换机
 可以说是direct的升级版，可以使用通配符
 
 1. #：匹配一个或多个词
@@ -405,7 +405,7 @@ public void listenTopicQueue2(String msg){
 >![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261453029.png)
 
 
-### 配置消息转换器
+### 6.4. 配置消息转换器
 默认情况下Spring采用的序列化方式是JDK序列化，但有很多问题，比如体积量大，可读性差等
 
 因此要配置一个新的序列化方式
@@ -444,7 +444,7 @@ public class MqConfig {
 > 要结合amqp使用！！！每个服务的消息转换器要一致
 
 
-## 提高消息的可靠性
+## 7. 提高消息的可靠性
 从发送者发送消息到消费者处理消息，中间会有多种可能性导致消息丢失，主要原因有以下几种：
 
 + **生产者发送时**（连接MQ失败、未找到Exchange、未找到Queue、MQ内部的异常等）
@@ -453,8 +453,8 @@ public class MqConfig {
 
 因此，可以从以上三方面进行处理，保证消息的可靠性
 
-### 生产者的可靠性
-#### 重试机制（看需求）
+### 7.1. 生产者的可靠性
+#### 7.1.1. 重试机制（看需求）
 `解决因网络问题导致连接mq失败的问题`
 
 **只需配置yml文件即可**
@@ -477,7 +477,7 @@ spring:
 > springAMQP提供的重试机制是阻塞式的，在重试的过程中，当前线程是被阻塞的（可以单独开一个线程，异步重试来解决），因此，要合理配置等待时长和重试次数
 
 
-#### 确认机制（不建议）
+#### 7.1.2. 确认机制（不建议）
 `解决未找到Exchange、未找到Queue、MQ内部发生异常`
 
 `！！！只要网络畅通，一般不会出现这种问题！！！`
@@ -585,8 +585,8 @@ void testPublisherConfirm() {
 
 
 
-### MQ的可靠性
-#### 数据持久化（建议）
+### 7.2. MQ的可靠性
+#### 7.2.1. 数据持久化（建议）
 `解决消息到达了队列，但未消费MQ突然宕机了`
 
 默认情况下MQ的数据都是在内存存储的临时数据，重启后就会消失。为了保证数据的可靠性，必须配置数据持久化，包括：
@@ -599,7 +599,7 @@ void testPublisherConfirm() {
 
 **java代码**：默认就是发的持久化消息，对于交换机与队列，默认是持久化的，但最好声明一下
 
-#### 惰性队列（建议，默认就是）
+#### 7.2.2. 惰性队列（建议，默认就是）
 `解决消息到达了队列，但未消费就突然宕机`
 
 RabbitMQ在3.6.0版本开始，添加了lazy queue模式；在3.12版本以后，队列的默认格式就是lazy queue
@@ -646,10 +646,10 @@ public void listenLazyQueue(String msg){
 > 因此，上一步的**三个持久化还是要做的**，惰性队列只是优化了内存的使用而已
 
 
-### 消费者的可靠性
+### 7.3. 消费者的可靠性
 顾名思义，以下配置应该在消费者端配置
 
-#### 确认机制（建议 确认+重试搭配）
+#### 7.3.1. 确认机制（建议 确认+重试搭配）
 消费者处理完消息后，回向Mq发送一个**回执**
 
 > + ack：成功处理消息，RabbitMQ从队列中删除该消息
@@ -679,7 +679,7 @@ public void listenLazyQueue(String msg){
 > 
 > 2. 如果是消息处理或校验异常，自动返回reject
 
-#### 重试机制（建议 确认+重试搭配）
+#### 7.3.2. 重试机制（建议 确认+重试搭配）
 如果消费者处理消息异常，那么就无限从mq到消费者，又从消费者到mq，大大增加了mq与消费者的压力
 
 因此确认机制最好搭配重试机制使用
@@ -750,7 +750,7 @@ public class ErrorMessageConfig {
 :::
 
 
-#### 确保业务幂等（必要）
+#### 7.3.3. 确保业务幂等（必要）
 > `什么是幂等？`
 >
 > 在开发中，指同一个业务，执行一次或多次对最终结果影响是一致的
@@ -810,8 +810,8 @@ public class SpringRabbitListener {
 2. 根据id查询数据库，判断订单状态
 3. 如果状态是未支付，则执行更新，反之不执行
 
-## 发送延迟消息
-### 使用死信交换机
+## 7.4. 发送延迟消息
+### 7.4.1. 使用死信交换机
 > `死信：`
 >
 > + 消费者返回 reject 或 nack 声明消费失败，并且消息的requeue参数设置为false
@@ -901,7 +901,7 @@ public class SpringAmqpTest {
 ```
 :::
 
-### 使用插件（建议）
+### 7.4.2. 使用插件（建议）
 **安装**
 
 1. 下载对应版本的插件：<Linkcard url="https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/tags" title="插件" description="https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/tags" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261519322.png"></Linkcard>
@@ -1001,7 +1001,7 @@ void testPublisherDelayMessage() {
 > 延迟消息插件内部会维护一个本地数据库表，同时使用Elang Timers功能实现计时。如果消息的延迟时间设置较长，可能会导致堆积的延迟消息非常多，会带来较大的CPU开销，因此，设置的延迟时间应该尽可能的短些
 
 
-## 最后提供一个mq的工具类
+## 8. 最后提供一个mq的工具类
 `RabbitMqUtils`
 ::: code-group
 ```java

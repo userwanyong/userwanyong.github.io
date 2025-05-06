@@ -149,7 +149,7 @@ MySQL使用的是**正向索引**
 **安装IK分词器：**
 
 1. 找到对应的版本下载：
-<Linkcard url="https://release.infinilabs.com/analysis-ik/stable/" title="IK分词器插件" description="https://release.infinilabs.com/analysis-ik/stable" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271450947.png"></Linkcard>
+   <Linkcard url="https://release.infinilabs.com/analysis-ik/stable/" title="IK分词器插件" description="https://release.infinilabs.com/analysis-ik/stable" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271450947.png"></Linkcard>
 2. 查看之前安装的Elasticsearch容器的plugins数据卷目录
 
 ::: code-group
@@ -293,14 +293,14 @@ PUT /索引库名/_mapping
 + 查询文档：GET /索引库名/_doc/文档id
 + 删除文档：DELETE /索引库名/_doc/文档id
 + 更新文档：
-  - 全量更新：PUT /索引库名/_doc/文档id
-  - 局部更新：POST /索引库名/_update/文档id（建议）
+    - 全量更新：PUT /索引库名/_doc/文档id
+    - 局部更新：POST /索引库名/_update/文档id（建议）
 
 >[!WARNING] 全量更新 与 局部更新 的区别
 >全量更新：先全部删除旧值，再添加新值
-> 
+>
 >局部更新：选择性修改想要修改的字段的值，其他字段值不变
-> 
+>
 `新增文档`
 ::: code-group
 ``` json
@@ -500,7 +500,7 @@ GET /items/_search
 ```
 :::
 
->[!WARNING] 注意 
+>[!WARNING] 注意
 > 出于性能考虑，与搜索关键字无关的查询尽量采用must_not或filter逻辑运算，避免参与相关性算分
 
 
@@ -621,7 +621,7 @@ search after：分页时需要排序，原理是从上一次的排序值开始�
 <Linkcard url="https://www.elastic.co/guide/en/elasticsearch/reference/7.12/paginate-search-results.html" title="文档" description="https://www.elastic.co/guide/en/elasticsearch/reference/7.12/paginate-search-results.html" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
 
 >[!WARNING] 注意
-> 大多数情况下，采用普通分页就可以。百度、京东等网站，其分页都有限制。例如百度最多支持77页，每页不足20条。京东最多100页，每页最多60条 
+> 大多数情况下，采用普通分页就可以。百度、京东等网站，其分页都有限制。例如百度最多支持77页，每页不足20条。京东最多100页，每页最多60条
 >
 >因此，一般我们采用限制分页深度的方式即可，无需实现深度分页！
 
@@ -1177,5 +1177,19 @@ public class SearchServiceImpl implements SearchService {
 ```
 :::
 至此，我们已经完成了一个简单的搜索功能，你可以根据自己的需求进行扩展
+
+## 6. 性能优化
+### 6.1 批量导入
+可以从以下几方面加快数据导入es的速度
+
++ **减少刷新频率（HZ）**
+    + 默认是1s，写入量很大时吞吐量降低，可以考虑插入时降低频率/关掉，等插入结束后再回复
++ **最佳bulk数量**
+    + 通过测试得到对应环境的bulk数量最佳值，每次插入100,200,……
++ **使用多线程**
+    + 多线程并发写入
++ **自动生成id**
+    + 手动设置id的话，插入时会判断该id是否已经存在，耗费时间；如果需要保存数据库id字段，可以考虑添加一个id字段，而不是用es的id
+
 
 **🥳 将来的你，一定会感谢现在努力奋斗的你，加油！💯**

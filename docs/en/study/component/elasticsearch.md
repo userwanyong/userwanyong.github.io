@@ -1,25 +1,25 @@
 # Elasticsearch <Badge type="danger" text="new" />
-<Linkcard url="https://www.elastic.co/cn/" title="Elastic中文官网" description="https://www.elastic.co/cn" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
+<Linkcard url="https://www.elastic.co/cn/" title="elasticChineseOfficialWebsite" description="https://www.elastic.co/cn" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
 
-## 1. 简介
+## 1. briefIntroduction
 
 #### 1.1. Elasticsearch
-Elasticsearch是由elastic公司开发的一套搜索引擎技术，功能是：存储、搜索、运算
+Elasticsearch is a set of search engine technologies developed by elastic, which functions as storage, search, and computing
 
 #### 1.2. Kibana
-Kibana是由elastic公司提供的用于操作Elasticsearch的可视化控制台，功能有：
+Kibana is a visual console provided by elastic for operating Elasticsearch, with the following features:
 
-1. 对Elasticsearch数据的搜索、展示
-2. 对Elasticsearch数据的统计、聚合，并形成图形化报表、图形
-3. 对Elasticsearch的集群状态监控
-4. 它还提供了一个开发控制台（DevTools），在其中对Elasticsearch的Restful的API接口提供了语法提示
+1. Search and display Elasticsearch data
+2. Statistics and aggregation of Elasticsearch data, and the formation of graphical reports and graphs
+3. Monitor the cluster status of Elasticsearch
+4. It also provides a development console (DevTools) where syntax hints are provided for the RESTful API interface of Elasticsearch
 
-> [!WARNING] elastic技术栈包括：
-> 1. **Elasticsearch**：用于数据存储、计算和搜索
-> 2. **Logstash/Beats**：用于数据收集
-> 3. **Kibana**：用于数据可视化
+> [!WARNING] The elastic stack includes:
+> 1. Elasticsearch: Used for data storage, computation, and search
+> 2. Logstash/Beats: Used for data collection
+> 3. Kibana: Used for data visualization
 >
-> 整套技术栈被称为ELK，经常用来做日志收集、系统监控和状态分析等
+> The entire technology stack is called ELK and is often used for log collection, system monitoring, and status analysis
 
 ## 2. 安装
 #### 2.1. Elasticsearch
@@ -371,7 +371,7 @@ POST _bulk
 ## 4. DSL查询
 Elasticsearch提供了基于JSON的DSL（Domain Specific Language）语句来定义查询条件，其JavaAPI就是在组织DSL条件
 
-<font style="color:##DF2A3F;">以下是按照json的包含关系写的</font>
+以下是按照json的包含关系写的
 
 ### 4.1. 查询 query
 

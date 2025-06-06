@@ -21,11 +21,11 @@ Redis 的 QPS 可以达到约 100000（每秒请求数 10w/s）
 
 1. 基于<font style="color:#D22D8D;">内存</font>实现
 2. 高效的事件处理模型
-    1. <font style="color:#D22D8D;">单线程</font>执行命令：可以避免多线程之间的竞争问题，省去了多线程切换带来的时间和性能上的开销
-    2. IO 多路复用：IO 多路复用机制是指<font style="color:#D22D8D;">一个线程处理多个 IO 流</font>
+   1. <font style="color:#D22D8D;">单线程</font>执行命令：可以避免多线程之间的竞争问题，省去了多线程切换带来的时间和性能上的开销
+   2. IO 多路复用：IO 多路复用机制是指<font style="color:#D22D8D;">一个线程处理多个 IO 流</font>
 3. 高效的数据结构
-    1. Redis 数据库<font style="color:#D22D8D;">使用</font>全局<font style="color:#D22D8D;">哈希表</font>来<font style="color:#D22D8D;">保存</font>所有<font style="color:#D22D8D;">键值对</font>，哈希表的时间复杂度是O(1)，它能够提供高效的查找和插入操作
-    2. Redis <font style="color:#D22D8D;">内置</font>了<font style="color:#D22D8D;">很多高效</font>的<font style="color:#D22D8D;">数据结构</font>，包括：SDS（简单动态字符串）、链表、压缩列表、哈希表、整数集合、跳表、quicklist（3.2 以后版本 双向链表 + 压缩列表）、listpack（5.0 以后版本） 等
+   1. Redis 数据库<font style="color:#D22D8D;">使用</font>全局<font style="color:#D22D8D;">哈希表</font>来<font style="color:#D22D8D;">保存</font>所有<font style="color:#D22D8D;">键值对</font>，哈希表的时间复杂度是O(1)，它能够提供高效的查找和插入操作
+   2. Redis <font style="color:#D22D8D;">内置</font>了<font style="color:#D22D8D;">很多高效</font>的<font style="color:#D22D8D;">数据结构</font>，包括：SDS（简单动态字符串）、链表、压缩列表、哈希表、整数集合、跳表、quicklist（3.2 以后版本 双向链表 + 压缩列表）、listpack（5.0 以后版本） 等
 
 ## 2. Redis 与 Memcached 有什么区别？
 | | Redis | Memcached |
@@ -111,8 +111,8 @@ Spring Data Redis 使用方式：
 ::: code-group
 ```xml
 <dependency>
-  <groupId>org.springframework.boot</groupId>
-  <artifactId>spring-boot-starter-data-redis</artifactId>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-data-redis</artifactId>
 </dependency>
 ```
 :::
@@ -122,10 +122,10 @@ Spring Data Redis 使用方式：
 ::: code-group
 ```yaml
 spring:
-  redis:
-    host: localhost
-    port: 6379
-    password: 252748377
+   redis:
+      host: localhost
+      port: 6379
+      password: 252748377
 ```
 :::
 

@@ -40,13 +40,13 @@ mq的处理方式大多是异步调用的，我们先来聊聊同步与异步的
 
 ## 2. 安装
 1. **拉取镜像（不指定版本的话，默认标签是latest，代表最新版）**
-::: code-group
+   ::: code-group
 ```bash
 docker pull rabbitmq
 ```
-::: 
+:::
 2. **运行容器（默认latest）**
-::: code-group
+   ::: code-group
 ```bash
 docker run \
  -e RABBITMQ_DEFAULT_USER=yong \
@@ -103,24 +103,24 @@ docker run \
 `如果有多个消费者，队列默认给每个消费者的消息是平均的，后面有处理方式`
 
 1. **新建队列**
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261417546.png)
+   ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261417546.png)
 
 2. **绑定交换机**
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261418978.png)
+   ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261418978.png)
 
 3. **测试**
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419820.png)
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419016.png)
+   ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419820.png)
+   ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419016.png)
 
 
 ## 5. 数据隔离
 一套mq会有多个项目使用，为使各个项目之间互不干扰，需要进行数据隔离
 
 1. **创建用户**（将管理权限分离）
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423236.png)
+   ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423236.png)
 
 2. 登录新创建的用户，**创建虚拟主机**（将每个项目数据进行隔离）
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423681.png)
+   ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423681.png)
 
 ## 6. 在java中使用
 1. **引入依赖**
@@ -128,8 +128,8 @@ docker run \
 ::: code-group
 ```xml
 <dependency>
-  <groupId>org.springframework.boot</groupId>
-  <artifactId>spring-boot-starter-amqp</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-amqp</artifactId>
 </dependency>
 ```
 :::
@@ -179,7 +179,7 @@ public class DirectConfig {
     }
 }
 ```
-::: 
+:::
 
 
 #### 6.1.2. 使用注解（方便）
@@ -580,7 +580,7 @@ void testPublisherConfirm() {
 
 > [!WARNING]注意
 > 开启生产者确认比较消耗MQ性能，一般不建议开启
-> 
+>
 > 对于`未找到Exchange、未找到Queue`一般是编程代码写错，对于`MQ内部发生异常`仅需要开启ConfirmCallback处理nack就可以了
 
 
@@ -670,13 +670,13 @@ public void listenLazyQueue(String msg){
 > :::
 >
 > **none**：不处理，消息投递给消费者后立刻ack，消息会立刻从MQ删除
-> 
+>
 > **manual**：手动模式，需要自己在业务代码中调用api，发送ack或reject，存在业务入侵，但更灵活
-> 
+>
 > **auto**：自动模式，业务正常执行时返回ack，业务出现异常时，根据异常类型返回不同结果：
-> 
+>
 > 1. 如果是业务异常，会自动返回nack
-> 
+>
 > 2. 如果是消息处理或校验异常，自动返回reject
 
 #### 7.3.2. 重试机制（建议 确认+重试搭配）
@@ -708,7 +708,7 @@ spring:
 > 这个策略是由MessageRecovery接口来定义的，它有3个不同实现：
 >
 > +  **RejectAndDontRequeueRecoverer**：重试耗尽后，直接reject，丢弃消息。默认
-> +  **ImmediateRequeueMessageRecoverer**：重试耗尽后，返回nack，消息重新入队 
+> +  **ImmediateRequeueMessageRecoverer**：重试耗尽后，返回nack，消息重新入队
 > +  **RepublishMessageRecoverer**：重试耗尽后，将失败消息投递到指定的交换机 （推荐）
 >
 > (如果本地重试到达指定次数还没成功，大多因为特殊原因，没必要在重试了，可以把消息扔到一个特定处理error的交换机，通过发送邮件等方式通知人员手动处理)

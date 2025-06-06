@@ -3,12 +3,15 @@ import vitepressProtectPlugin from "vitepress-protect-plugin"
 
 const base = '/'
 export default defineConfig({
+  head: [
+    ['link', {rel: 'icon', href: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png'}]
+  ],
   vite: {
     plugins: [
       vitepressProtectPlugin({
-        disableF12: true, // 禁用F12开发者模式
-        disableCopy: true, // 禁用文本复制
-        disableSelect: false, // 禁用文本选择
+        disableF12: false, // 是否禁用F12开发者模式
+        disableCopy: true, // 是否禁用文本复制
+        disableSelect: false, // 是否禁用文本选择
       }),
     ],
   },

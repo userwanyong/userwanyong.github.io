@@ -203,62 +203,66 @@ features:
 
 <script>
 // 页面加载完成后执行
-window.addEventListener('load', () => {
-  // 添加鼠标跟随效果
-  const cursor = document.createElement('div');
-  cursor.className = 'custom-cursor';
-  document.body.appendChild(cursor);
-  
-  // 添加鼠标跟随样式
-  const style = document.createElement('style');
-  style.textContent = `
-    .custom-cursor {
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: rgba(189, 52, 254, 0.3);
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      transition: transform 0.1s, width 0.3s, height 0.3s, background-color 0.3s;
-    }
+if (typeof window !== 'undefined') {
+  window.addEventListener('load', () => {
+    // 添加鼠标跟随效果
+  if (typeof document !== 'undefined') {
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    document.body.appendChild(cursor);
     
-    .custom-cursor.active {
-      width: 40px;
-      height: 40px;
-      background-color: rgba(65, 209, 255, 0.2);
-    }
-  `;
-  document.head.appendChild(style);
-  
-  // 鼠标移动时更新光标位置
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
-  
-  // 鼠标点击时添加动画效果
-  document.addEventListener('mousedown', () => {
-    cursor.classList.add('active');
-  });
-  
-  document.addEventListener('mouseup', () => {
-    cursor.classList.remove('active');
-  });
-  
-  // 为链接添加悬停效果
-  const links = document.querySelectorAll('a');
-  links.forEach(link => {
-    link.addEventListener('mouseenter', () => {
+    // 添加鼠标跟随样式
+    const style = document.createElement('style');
+    style.textContent = `
+      .custom-cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(189, 52, 254, 0.3);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        transition: transform 0.1s, width 0.3s, height 0.3s, background-color 0.3s;
+      }
+      
+      .custom-cursor.active {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(65, 209, 255, 0.2);
+      }
+    `;
+    document.head.appendChild(style);
+    
+    // 鼠标移动时更新光标位置
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+    
+    // 鼠标点击时添加动画效果
+    document.addEventListener('mousedown', () => {
       cursor.classList.add('active');
     });
     
-    link.addEventListener('mouseleave', () => {
+    document.addEventListener('mouseup', () => {
       cursor.classList.remove('active');
     });
+    
+      // 为链接添加悬停效果
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        cursor.classList.add('active');
+      });
+      
+      link.addEventListener('mouseleave', () => {
+        cursor.classList.remove('active');
+      });
+    });
+  }
   });
-});
+}
 </script>
 
 

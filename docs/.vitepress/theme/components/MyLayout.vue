@@ -7,9 +7,11 @@ import { nextTick, provide, onMounted } from 'vue'
 
 const { isDark } = useData()
 
-const enableTransitions = () =>
-    'startViewTransition' in document &&
+const enableTransitions = () => {
+  if (typeof document === 'undefined' || typeof window === 'undefined') return false
+  return 'startViewTransition' in document &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches
+}
 
 provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   if (!enableTransitions()) {
@@ -20,24 +22,26 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   const clipPath = [
     `circle(0px at ${x}px ${y}px)`,
     `circle(${Math.hypot(
-        Math.max(x, innerWidth - x),
-        Math.max(y, innerHeight - y)
+        Math.max(x, (typeof window !== 'undefined' ? window.innerWidth : 0) - x),
+        Math.max(y, (typeof window !== 'undefined' ? window.innerHeight : 0) - y)
     )}px at ${x}px ${y}px)`
   ]
 
-  await document.startViewTransition(async () => {
-    isDark.value = !isDark.value
-    await nextTick()
-  }).ready
+  if (typeof document !== 'undefined' && 'startViewTransition' in document) {
+    await document.startViewTransition(async () => {
+      isDark.value = !isDark.value
+      await nextTick()
+    }).ready
 
-  document.documentElement.animate(
+    document.documentElement.animate(
       { clipPath: isDark.value ? clipPath.reverse() : clipPath },
       {
         duration: 300,
         easing: 'ease-in',
         pseudoElement: `::view-transition-${isDark.value ? 'old' : 'new'}(root)`
       }
-  )
+    )
+  }
 })
 </script>
 

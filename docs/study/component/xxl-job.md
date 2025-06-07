@@ -492,7 +492,6 @@ UNLOCK TABLES;
 
 ```
 :::
-  Markdown默认折叠语法，Vitepress可以使用容器折叠语法，更加美观
 </details>
 
 

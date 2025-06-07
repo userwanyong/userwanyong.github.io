@@ -3,12 +3,15 @@ import vitepressProtectPlugin from "vitepress-protect-plugin"
 
 const base = '/'
 export default defineConfig({
+  head: [
+    ['link', {rel: 'icon', href: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png'}]
+  ],
   vite: {
     plugins: [
       vitepressProtectPlugin({
-        disableF12: true, // 禁用F12开发者模式
-        disableCopy: true, // 禁用文本复制
-        disableSelect: false, // 禁用文本选择
+        disableF12: false, // 是否禁用F12开发者模式
+        disableCopy: true, // 是否禁用文本复制
+        disableSelect: false, // 是否禁用文本选择
       }),
     ],
   },
@@ -26,11 +29,11 @@ export default defineConfig({
       label: '简体中文',
       lang: 'Zh_CN',
     },
-    en: {
-      label: 'English',
-      lang: 'en',
-      link: '/en/',
-    },
+    // en: {
+    //   label: 'English',
+    //   lang: 'en',
+    //   link: '/en/',
+    // },
   },
   base,
   title: "YONG",
@@ -75,13 +78,14 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '教程',
+      { text: '文档',
         items: [
           {
-            text: '组件',
+            text: '中间件',
             items: [
               { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
               { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
+              { text: 'Xxl-job', link: '/study/component/xxl-job' },
             ]
           },
           {
@@ -96,11 +100,12 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '组件',
+        text: '中间件',
         collapsed: false,
         items: [
           { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
           { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
+          { text: 'Xxl-job', link: '/study/component/xxl-job' },
         ]
       },
       {

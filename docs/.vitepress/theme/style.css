@@ -17,6 +17,7 @@
     .DocSearch-Button {
         background-color: rgba(255, 255, 255, 0);
         backdrop-filter: blur(10px);
+        margin-right: 40px; /* 向右移动，可根据需要调整数值 */
     }
 
     /* Feature透明 */
@@ -47,7 +48,6 @@
         backdrop-filter: blur(10px);
     }
 }
-
 
 /* 主页头像属性 */
 .image-src {

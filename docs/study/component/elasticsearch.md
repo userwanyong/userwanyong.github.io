@@ -1,4 +1,4 @@
-# Elasticsearch <Badge type="danger" text="new" />
+# Elasticsearch
 <Linkcard url="https://www.elastic.co/cn/" title="Elastic中文官网" description="https://www.elastic.co/cn" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
 
 ## 1. 简介
@@ -371,7 +371,7 @@ POST _bulk
 ## 4. DSL查询
 Elasticsearch提供了基于JSON的DSL（Domain Specific Language）语句来定义查询条件，其JavaAPI就是在组织DSL条件
 
-<font style="color:##DF2A3F;">以下是按照json的包含关系写的</font>
+以下是按照json的包含关系写的
 
 ### 4.1. 查询 query
 

@@ -95,33 +95,6 @@ features:
   }
 }
 
-/* 特性卡片悬停效果 */
-.VPFeature {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.VPFeature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* 特性卡片图标动画 */
-.VPFeature .icon {
-  transition: transform 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-}
-
-.VPFeature:hover .icon {
-  transform: rotate(360deg) scale(1.2);
-}
-
 /* 标题文字渐变动画 */
 .name {
   background-size: 200% auto;

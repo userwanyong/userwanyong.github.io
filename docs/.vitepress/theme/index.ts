@@ -6,7 +6,7 @@ import './vp-code.css'
 import './vp-code-group.css'
 import './bubbles.css'
 import MyLayout from './components/MyLayout.vue'
-import Linkcard from "./components/Linkcard.vue"
+import Linkcard from './components/Linkcard.vue'
 
 export default {
     extends: DefaultTheme,

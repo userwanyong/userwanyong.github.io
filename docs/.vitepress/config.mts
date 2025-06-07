@@ -29,11 +29,11 @@ export default defineConfig({
       label: '简体中文',
       lang: 'Zh_CN',
     },
-    en: {
-      label: 'English',
-      lang: 'en',
-      link: '/en/',
-    },
+    // en: {
+    //   label: 'English',
+    //   lang: 'en',
+    //   link: '/en/',
+    // },
   },
   base,
   title: "YONG",
@@ -78,13 +78,14 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '教程',
+      { text: '文档',
         items: [
           {
-            text: '组件',
+            text: '中间件',
             items: [
               { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
               { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
+              { text: 'Xxl-job', link: '/study/component/xxl-job' },
             ]
           },
           {
@@ -99,11 +100,12 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '组件',
+        text: '中间件',
         collapsed: false,
         items: [
           { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
           { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
+          { text: 'Xxl-job', link: '/study/component/xxl-job' },
         ]
       },
       {

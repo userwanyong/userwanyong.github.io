@@ -34,9 +34,9 @@ features:
     details: 高性能的内存数据库，加速应用响应和数据缓存
     link: /study/database/redis
   - icon: 📚
-    title: 学习笔记
-    details: 分享我的技术学习心得和实践经验
-    link: /
+    title: Xxl-job
+    details: 轻量级的分布式任务调度平台
+    link: /study/component/xxl-job
   - icon: 🚀
     title: 更多内容
     details: 持续更新中，敬请期待...

@@ -1,4 +1,4 @@
-# RabbitMQ <Badge type="danger" text="new" />
+# RabbitMQ
 <Linkcard url="https://www.rabbitmq.com/" title="RobbitMQ官网" description="https://www.rabbitmq.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-26%20130648.png"></Linkcard>
 
 ## 1. 了解MQ

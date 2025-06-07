@@ -1,4 +1,4 @@
-# Elasticsearch <Badge type="danger" text="new" />
+# Elasticsearch
 <Linkcard url="https://www.elastic.co/cn/" title="Elastic中文官网" description="https://www.elastic.co/cn" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
 
 ## 1. 简介

@@ -9,8 +9,8 @@
     --vp-home-hero-image-filter: blur(72px);
 
     /* 修改侧边栏宽度 */
-    --vp-sidebar-width: 200px;
-    --vp-layout-max-width: 1600px;
+    --vp-sidebar-width: 230px;
+    --vp-layout-max-width: 1650px;
 
     /* 首页下滑后导航透明 */
     .VPNavBar:not(.has-sidebar):not(.home.top) {

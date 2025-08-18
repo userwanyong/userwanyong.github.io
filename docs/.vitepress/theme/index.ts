@@ -5,6 +5,7 @@ import './hidden.css'
 import './vp-code.css'
 import './vp-code-group.css'
 import './bubbles.css'
+import './sidebarIcon.css'
 import MyLayout from './components/MyLayout.vue'
 import Linkcard from './components/Linkcard.vue'
 
@@ -13,8 +14,7 @@ export default {
     Layout: MyLayout,
     enhanceApp({app}) {
         // 注册全局组件
-        app.component('Linkcard' , Linkcard)
+        app.component('Linkcard', Linkcard)
     }
-
 }
 

@@ -41,7 +41,7 @@ export default defineConfig({
   cleanUrls: true,// 清除.html后缀
   lastUpdated: true,
   themeConfig: {
-    logo: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/avatar.jpg',
+    logo: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png',
     siteTitle: 'YONG',
     search: {
       provider: "local",
@@ -51,9 +51,9 @@ export default defineConfig({
       copyright: 'Contact me: 2026804718@qq.com</a>'
     },
     //侧边栏文字更改(移动端) 默认 Menu //
-    sidebarMenuLabel:'目录',
+    sidebarMenuLabel: '目录',
     //返回顶部文字修改 默认 Return to top //
-    returnToTopLabel:'返回顶部',
+    returnToTopLabel: '返回顶部',
     //编辑本页 //
     editLink: {
       pattern: 'https://github.com/userwanyong/userwanyong.github.io', // 改成自己的仓库
@@ -77,50 +77,103 @@ export default defineConfig({
       label: '大纲' // 替换 On this page
     },
     nav: [
-      { text: '首页', link: '/' },
-      { text: '文档',
+      {text: '我的主页', link: '/'},
+      {
+        text: '技术文档',
         items: [
           {
             text: '中间件',
             items: [
-              { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
-              { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
-              { text: 'Xxl-job', link: '/study/component/xxl-job' },
+              {text: 'Elasticsearch', link: '/study/component/elasticsearch'},
+              {text: 'RabbitMQ', link: '/study/component/rabbitmq'},
+              {text: 'Xxl-job', link: '/study/component/xxl-job'},
             ]
           },
           {
             text: '数据库',
             items: [
-              { text: 'Mysql', link: '/study/database/mysql' },
-              { text: 'Redis', link: '/study/database/redis' },
+              {text: 'Mysql', link: '/study/database/mysql'},
+              {text: 'Redis', link: '/study/database/redis'},
+            ]
+          },
+          {
+            text: '实用工具',
+            items: [
+              {text: 'Git', link: '/study/util/git'},
+            ]
+          },
+        ],
+      },
+      {
+        text: '项目经历',
+        items: [
+          {
+            text: '项目',
+            items: [
+              {text: '营动空间', link: '/experience/project/marketing'},
+              {text: 'MCP 服务中心', link: '/experience/project/mcp-server'},
+              {text: 'AI-Agent', link: '/experience/project/ai-agent'},
+            ]
+          },
+          {
+            text: '组件',
+            items: [
+              {text: 'DCC 动态配置中心', link: '/experience/component/dcc'},
             ]
           },
         ],
       }
     ],
-    sidebar: [
-      {
-        text: '中间件',
-        collapsed: false,
-        items: [
-          { text: 'Elasticsearch', link: '/study/component/elasticsearch' },
-          { text: 'RabbitMQ', link: '/study/component/rabbitmq' },
-          { text: 'Xxl-job', link: '/study/component/xxl-job' },
-        ]
-      },
-      {
-        text: '数据库',
-        collapsed: false,
-        items: [
-          { text: 'Mysql', link: '/study/database/mysql' },
-          { text: 'Redis', link: '/study/database/redis' },
-        ]
-      }
-    ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/userwanyong' },
-      { icon: 'gitee', link: 'https://gitee.com/user_wan' }
+      {icon: 'github', link: 'https://github.com/userwanyong'},
+      {icon: 'gitee', link: 'https://gitee.com/user_wan'}
     ],
+    sidebar: {
+      '/study/': [
+        {
+          text: '中间件',
+          collapsed: false,
+          items: [
+            {text: 'Elasticsearch', link: '/study/component/elasticsearch'},
+            {text: 'RabbitMQ', link: '/study/component/rabbitmq'},
+            {text: 'Xxl-job', link: '/study/component/xxl-job'},
+          ]
+        },
+        {
+          text: '数据库',
+          collapsed: false,
+          items: [
+            {text: 'Mysql', link: '/study/database/mysql'},
+            {text: 'Redis', link: '/study/database/redis'},
+          ]
+        },
+        {
+          text: '实用工具',
+          collapsed: false,
+          items: [
+            {text: 'Git', link: '/study/util/git'},
+          ]
+        }
+      ],
+      '/experience/': [
+        {
+          text: '项目',
+          collapsed: false,
+          items: [
+            {text: '营动空间', link: '/experience/project/marketing'},
+            {text: 'MCP 服务中心', link: '/experience/project/mcp-server'},
+            {text: 'AI-Agent', link: '/experience/project/ai-agent'},
+          ]
+        },
+        {
+          text: '组件',
+          collapsed: false,
+          items: [
+            {text: 'DCC 动态配置中心', link: '/experience/component/dcc'},
+          ]
+        }
+      ],
+    }
   }
 
 })

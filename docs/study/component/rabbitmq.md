@@ -1,4 +1,11 @@
 # RabbitMQ
+<br/>
+<img src="https://img.shields.io/badge/-RabbitMQ-FF6600?logo=RabbitMQ&logoColor=FFF" alt="RabbitMQ" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Java-F78C40?logo=OpenJDK&logoColor=FFF" alt="Java" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=Spring-Boot&logoColor=FFF" alt="Spring Boot" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Maven-C71A36?logo=Apache-Maven&logoColor=FFF" alt="Maven" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Docker-2496ED?logo=Docker&logoColor=FFF" alt="Docker" style="display: inline-block;margin-right: 2px" /> 
+
 <Linkcard url="https://www.rabbitmq.com/" title="RobbitMQ官网" description="https://www.rabbitmq.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-26%20130648.png"></Linkcard>
 
 ## 1. 了解MQ

@@ -1,4 +1,12 @@
 # Xxl-job <Badge type="danger" text="new" />
+<br/>
+<img src="https://img.shields.io/badge/-Xxl Job-8A2BE2" alt="" style="display: inline-block;margin-right: 2px"/> 
+<img src="https://img.shields.io/badge/-Java-F78C40?logo=OpenJDK&logoColor=FFF" alt="Java" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=Spring-Boot&logoColor=FFF" alt="Spring Boot" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Maven-C71A36?logo=Apache-Maven&logoColor=FFF" alt="Maven" style="display: inline-block;margin-right: 2px" />
+<img src="https://img.shields.io/badge/-MySQL-4479A1?logo=MySQL&logoColor=FFF" alt="MySQL" style="display: inline-block;margin-right: 2px" />
+<img src="https://img.shields.io/badge/-Docker-2496ED?logo=Docker&logoColor=FFF" alt="Docker" style="display: inline-block;margin-right: 2px" /> 
+
 <Linkcard url="https://www.xuxueli.com/xxl-job/" title="Xxl-job官网" description="https://www.xuxueli.com/xxl-job" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202506072210417.png"></Linkcard>
 
 ## 1. 概述

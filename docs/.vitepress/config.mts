@@ -9,14 +9,22 @@ export default defineConfig({
   vite: {
     plugins: [
       vitepressProtectPlugin({
-        disableF12: false, // 是否禁用F12开发者模式
-        disableCopy: true, // 是否禁用文本复制
+        disableF12: true, // 是否禁用F12开发者模式
+        disableCopy: false, // 是否禁用文本复制
         disableSelect: false, // 是否禁用文本选择
       }),
     ],
   },
   //markdown配置
   markdown: {
+    // 组件插入h1标题下
+    config: (md) => {
+      md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+        let htmlResult = slf.renderToken(tokens, idx, options);
+        if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`;
+        return htmlResult;
+      }
+    },
     lineNumbers: true,
     image: {
       // 开启图片懒加载

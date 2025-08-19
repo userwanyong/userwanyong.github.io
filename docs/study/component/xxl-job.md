@@ -1,5 +1,4 @@
 # Xxl-job <Badge type="danger" text="new" />
-<br/>
 <img src="https://img.shields.io/badge/-Xxl Job-8A2BE2" alt="" style="display: inline-block;margin-right: 2px"/> 
 <img src="https://img.shields.io/badge/-Java-F78C40?logo=OpenJDK&logoColor=FFF" alt="Java" style="display: inline-block;margin-right: 2px" /> 
 <img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=Spring-Boot&logoColor=FFF" alt="Spring Boot" style="display: inline-block;margin-right: 2px" /> 

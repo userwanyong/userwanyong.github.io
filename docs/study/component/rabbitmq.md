@@ -1,5 +1,4 @@
 # RabbitMQ
-<br/>
 <img src="https://img.shields.io/badge/-RabbitMQ-FF6600?logo=RabbitMQ&logoColor=FFF" alt="RabbitMQ" style="display: inline-block;margin-right: 2px" /> 
 <img src="https://img.shields.io/badge/-Java-F78C40?logo=OpenJDK&logoColor=FFF" alt="Java" style="display: inline-block;margin-right: 2px" /> 
 <img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=Spring-Boot&logoColor=FFF" alt="Spring Boot" style="display: inline-block;margin-right: 2px" /> 
@@ -34,15 +33,15 @@ mq的处理方式大多是异步调用的，我们先来聊聊同步与异步的
 3. 业务安全依赖于消息的可靠性
 
 ### 1.2. 常见的MQ
-| | **<span style="color:rgb(0, 0, 0);">RabbitMQ</span>** | **<span style="color:rgb(0, 0, 0);">ActiveMQ</span>** | **<span style="color:rgb(0, 0, 0);">RocketMQ</span>** | **<span style="color:rgb(0, 0, 0);">Kafka</span>** |
-| :-: | :-: | :-: | :-: | :-: |
-| <span style="color:rgb(0, 0, 0);">公司/社区</span> | <span style="color:rgb(0, 0, 0);">Rabbit</span> | <span style="color:rgb(0, 0, 0);">Apache</span> | <span style="color:rgb(0, 0, 0);">阿里</span> | <span style="color:rgb(0, 0, 0);">Apache</span> |
-| <span style="color:rgb(0, 0, 0);">开发语言</span> | <span style="color:rgb(0, 0, 0);">Erlang</span> | <span style="color:rgb(0, 0, 0);">Java</span> | <span style="color:rgb(0, 0, 0);">Java</span> | <span style="color:rgb(0, 0, 0);">Scala&Java</span> |
-| <span style="color:rgb(0, 0, 0);">协议支持</span> | <span style="color:rgb(0, 0, 0);">AMQP，XMPP，SMTP，STOMP</span> | <span style="color:rgb(0, 0, 0);">OpenWire,STOMP，REST,XMPP,AMQP</span> | <span style="color:rgb(0, 0, 0);">自定义协议</span> | <span style="color:rgb(0, 0, 0);">自定义协议</span> |
-| <span style="color:rgb(0, 0, 0);">可用性</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">一般</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">高</span> |
-| <span style="color:rgb(0, 0, 0);">单机吞吐量</span> | <span style="color:rgb(0, 0, 0);">一般</span> | <span style="color:rgb(0, 0, 0);">差</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">非常高</span> |
-| <span style="color:rgb(0, 0, 0);">消息延迟</span> | <span style="color:rgb(0, 0, 0);">微秒级</span> | <span style="color:rgb(0, 0, 0);">毫秒级</span> | <span style="color:rgb(0, 0, 0);">毫秒级</span> | <span style="color:rgb(0, 0, 0);">毫秒以内</span> |
-| <span style="color:rgb(0, 0, 0);">消息可靠性</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">一般</span> | <span style="color:rgb(0, 0, 0);">高</span> | <span style="color:rgb(0, 0, 0);">一般</span> |
+|                                                |     **<span style="color:rgb(0, 0, 0);">RabbitMQ</span>**     |         **<span style="color:rgb(0, 0, 0);">ActiveMQ</span>**          | **<span style="color:rgb(0, 0, 0);">RocketMQ</span>** | **<span style="color:rgb(0, 0, 0);">Kafka</span>**  |
+|:----------------------------------------------:|:-------------------------------------------------------------:|:----------------------------------------------------------------------:|:-----------------------------------------------------:|:---------------------------------------------------:|
+| <span style="color:rgb(0, 0, 0);">公司/社区</span> |        <span style="color:rgb(0, 0, 0);">Rabbit</span>        |            <span style="color:rgb(0, 0, 0);">Apache</span>             |      <span style="color:rgb(0, 0, 0);">阿里</span>      |   <span style="color:rgb(0, 0, 0);">Apache</span>   |
+| <span style="color:rgb(0, 0, 0);">开发语言</span>  |        <span style="color:rgb(0, 0, 0);">Erlang</span>        |             <span style="color:rgb(0, 0, 0);">Java</span>              |     <span style="color:rgb(0, 0, 0);">Java</span>     | <span style="color:rgb(0, 0, 0);">Scala&Java</span> |
+| <span style="color:rgb(0, 0, 0);">协议支持</span>  | <span style="color:rgb(0, 0, 0);">AMQP，XMPP，SMTP，STOMP</span> | <span style="color:rgb(0, 0, 0);">OpenWire,STOMP，REST,XMPP,AMQP</span> |    <span style="color:rgb(0, 0, 0);">自定义协议</span>     |   <span style="color:rgb(0, 0, 0);">自定义协议</span>    |
+|  <span style="color:rgb(0, 0, 0);">可用性</span>  |          <span style="color:rgb(0, 0, 0);">高</span>           |              <span style="color:rgb(0, 0, 0);">一般</span>               |      <span style="color:rgb(0, 0, 0);">高</span>       |     <span style="color:rgb(0, 0, 0);">高</span>      |
+| <span style="color:rgb(0, 0, 0);">单机吞吐量</span> |          <span style="color:rgb(0, 0, 0);">一般</span>          |               <span style="color:rgb(0, 0, 0);">差</span>               |      <span style="color:rgb(0, 0, 0);">高</span>       |    <span style="color:rgb(0, 0, 0);">非常高</span>     |
+| <span style="color:rgb(0, 0, 0);">消息延迟</span>  |         <span style="color:rgb(0, 0, 0);">微秒级</span>          |              <span style="color:rgb(0, 0, 0);">毫秒级</span>              |     <span style="color:rgb(0, 0, 0);">毫秒级</span>      |    <span style="color:rgb(0, 0, 0);">毫秒以内</span>    |
+| <span style="color:rgb(0, 0, 0);">消息可靠性</span> |          <span style="color:rgb(0, 0, 0);">高</span>           |              <span style="color:rgb(0, 0, 0);">一般</span>               |      <span style="color:rgb(0, 0, 0);">高</span>       |     <span style="color:rgb(0, 0, 0);">一般</span>     |
 
 
 ## 2. 安装

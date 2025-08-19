@@ -626,7 +626,7 @@ elasticsearch的数据一般会采用分片存储，也就是把一个索引中�
 实现深度分页的方式：
 
 search after：分页时需要排序，原理是从上一次的排序值开始，查询下一页数据。参考：
-<Linkcard url="https://www.elastic.co/guide/en/elasticsearch/reference/7.12/paginate-search-results.html" title="文档" description="https://www.elastic.co/guide/en/elasticsearch/reference/7.12/paginate-search-results.html" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
+<Linkcard url="https://www.elastic.co/guide/en/elasticsearch/reference/7.12/paginate-search-results.html" title="文档" description="https://www.elastic.co/……/7.12/paginate-search-results.html" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502271506732.png"></Linkcard>
 
 >[!WARNING] 注意
 > 大多数情况下，采用普通分页就可以。百度、京东等网站，其分页都有限制。例如百度最多支持77页，每页不足20条。京东最多100页，每页最多60条 

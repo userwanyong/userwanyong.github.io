@@ -6,14 +6,14 @@ hero:
   text: "My Personal Tech Blog"
   tagline: "ogether探索技术的奥秘，共同进步"
   image:
-    src: https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/avatar.jpg
+    src: https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png
     alt: 个人头像
   actions:
     - theme: brand
       text: 开始探索
       link: /study/component/elasticsearch
     - theme: alt
-      text: 关于我
+      text: Git Hub
       link: https://github.com/userwanyong
 
 features:
@@ -43,6 +43,9 @@ features:
     link: /
 ---
 
+<HomeUnderline />
+<confetti />
+
 <div class="bubbles">
   <div class="bubble"></div>
   <div class="bubble"></div>
@@ -69,12 +72,6 @@ features:
 
 
 <style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
-}
-
-
 
 @keyframes rise {
   0% {
@@ -183,27 +180,27 @@ if (typeof window !== 'undefined') {
     document.body.appendChild(cursor);
     
     // 添加鼠标跟随样式
-    const style = document.createElement('style');
-    style.textContent = `
-      .custom-cursor {
-        position: fixed;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: rgba(189, 52, 254, 0.3);
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-        z-index: 9999;
-        transition: transform 0.1s, width 0.3s, height 0.3s, background-color 0.3s;
-      }
-      
-      .custom-cursor.active {
-        width: 40px;
-        height: 40px;
-        background-color: rgba(65, 209, 255, 0.2);
-      }
-    `;
-    document.head.appendChild(style);
+    // const style = document.createElement('style');
+    // style.textContent = `
+    //   .custom-cursor {
+    //     position: fixed;
+    //     width: 20px;
+    //     height: 20px;
+    //     border-radius: 50%;
+    //     background-color: rgba(189, 52, 254, 0.3);
+    //     pointer-events: none;
+    //     transform: translate(-50%, -50%);
+    //     z-index: 9999;
+    //     transition: transform 0.1s, width 0.3s, height 0.3s, background-color 0.3s;
+    //   }
+    //  
+    //   .custom-cursor.active {
+    //     width: 40px;
+    //     height: 40px;
+    //     background-color: rgba(65, 209, 255, 0.2);
+    //   }
+    // `;
+    // document.head.appendChild(style);
     
     // 鼠标移动时更新光标位置
     document.addEventListener('mousemove', (e) => {

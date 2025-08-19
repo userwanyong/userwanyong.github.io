@@ -1,4 +1,9 @@
 # Redis
+<img src="https://img.shields.io/badge/-Redis-DC382D?logo=Redis&logoColor=FFF" alt="Redis" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Java-F78C40?logo=OpenJDK&logoColor=FFF" alt="Java" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=Spring-Boot&logoColor=FFF" alt="Spring Boot" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Maven-C71A36?logo=Apache-Maven&logoColor=FFF" alt="Maven" style="display: inline-block;margin-right: 2px" />
+
 <Linkcard url="https://www.redis.net.cn/" title="Redis官网" description="https://www.redis.net.cn" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502281424408.png"></Linkcard>
 
 ## 1. 认识 Redis

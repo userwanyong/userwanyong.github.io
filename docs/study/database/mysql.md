@@ -1,4 +1,6 @@
 # Mysql
+<img src="https://img.shields.io/badge/-MySQL-4479A1?logo=MySQL&logoColor=FFF" alt="MySQL" style="display: inline-block;margin-right: 2px" /> 
+
 <Linkcard url="https://dev.mysql.com/" title="Mysql官网" description="https://dev.mysql.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502281426220.png"></Linkcard>
 
 

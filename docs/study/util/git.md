@@ -1,4 +1,9 @@
 # Git
+<img src="https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=FFF" alt="Git" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-GitHub-181717?logo=GitHub&logoColor=FFF" alt="GitHub" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-Gitee-C71D23?logo=Gitee&logoColor=FFF" alt="Gitee" style="display: inline-block;margin-right: 2px" /> 
+<img src="https://img.shields.io/badge/-GitLab-FC6D26?logo=GitLab&logoColor=FFF" alt="gitlab" style="display: inline-block;margin-right: 2px" /> 
+
 <Linkcard url="https://git-scm.com" title="git 官网" description="https://git-scm.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181534772.png"></Linkcard>
 
 ## 1. 是什么
@@ -16,10 +21,12 @@ Github、Gitlab、Gitee等
 
 ### 3.3. 然后在命令行`Git Bash`中输入
 
+::: code-group
 ```bash
 git config --global user.name "your_name"
 git config --global user.email "your_email"
 ```
+:::
 
 ## 4. 常见命令
 <Linkcard url="https://www.runoob.com/manual/git-guide/" title="简明指南，快速上手" description="https://www.runoob.com/manual/git-guide/" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
@@ -97,33 +104,33 @@ git config --global user.email "your_email"
 
 下面是一个从零开始拷贝远程仓库、创建分支、提交到远程仓库的例子：
 
+::: code-group
 ```bash
-1.克隆远程仓库
+# 1.克隆远程仓库
 git clone username@host:/path/to/repository
 
-2.创建一个叫做feature_x的分支，并切换过去
+# 2.创建一个叫做feature_x的分支，并切换过去
 git checkout -b feature_x
 
-3..添加文件到暂存区
-git add <filename>
-or
-git add *
+# 3.添加文件到暂存区
+git add <filename> / git add *
 
-4..提交
+# 4.提交
 git commit -m "代码提交信息"
 
-5.推送feature_x分支（可选）
+# 5.推送feature_x分支（可选）
 git push origin feature_x
 
-6.切换回主分支
+# 6.切换回主分支
 git checkout master
 
-7.将feature_x分支合并到当前(master)分支
+# 7.将feature_x分支合并到当前(master)分支
 git merge feature_x
 
-8.删除feature_x分支
+# 8.删除feature_x分支
 git branch -d feature_x
 ```
+:::
 
 当然，你也可以使用像idea等编译器直接图形化操作
 

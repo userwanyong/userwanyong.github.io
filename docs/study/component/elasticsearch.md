@@ -1,5 +1,4 @@
 # Elasticsearch
-<br/>
 <img src="https://img.shields.io/badge/-ElasticSearch-005571?logo=ElasticSearch&logoColor=FFF" alt="ElasticSearch" style="display: inline-block;margin-right: 2px" />
 <img src="https://img.shields.io/badge/-Java-F78C40?logo=OpenJDK&logoColor=FFF" alt="Java" style="display: inline-block;margin-right: 2px" /> 
 <img src="https://img.shields.io/badge/-Kibana-A9A9A9?logo=Kibana&logoColor=005571" alt="Kibana" style="display: inline-block;margin-right: 2px" />
@@ -42,9 +41,9 @@ docker pull elasticsearch:7.12.1
 
 ::: code-group
 ```bash
-docker run -d \
+docker run -d \ 
   --name es \
-  -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
+  -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \ 
   -e "discovery.type=single-node" \
   -v es-data:/usr/share/elasticsearch/data \
   -v es-plugins:/usr/share/elasticsearch/plugins \
@@ -212,13 +211,13 @@ POST /_analyze
 2. 在对应词典中添加拓展词条或者停用词条即可
 
 ### 3.3. mysql与elasticsearch关系
-| **MySQL** | **Elasticsearch** | **说明** |
-| --- | --- | --- |
-| Table | Index | 索引(index)，就是文档的集合，类似数据库的表(table) |
-| Row | Document | 文档（Document），就是一条条的数据，类似数据库中的行（Row），文档都是JSON格式 |
-| Column | Field | 字段（Field），就是JSON文档中的字段，类似数据库中的列（Column） |
-| Schema | Mapping | Mapping（映射）是索引中文档的约束，例如字段类型约束。类似数据库的表结构（Schema） |
-| SQL | DSL | DSL是elasticsearch提供的JSON风格的请求语句，用来操作elasticsearch，实现CRUD |
+| **MySQL** | **Elasticsearch** | **说明**                                                   |
+|-----------|-------------------|----------------------------------------------------------|
+| Table     | Index             | 索引(index)，就是文档的集合，类似数据库的表(table)                         |
+| Row       | Document          | 文档（Document），就是一条条的数据，类似数据库中的行（Row），文档都是JSON格式           |
+| Column    | Field             | 字段（Field），就是JSON文档中的字段，类似数据库中的列（Column）                  |
+| Schema    | Mapping           | Mapping（映射）是索引中文档的约束，例如字段类型约束。类似数据库的表结构（Schema）          |
+| SQL       | DSL               | DSL是elasticsearch提供的JSON风格的请求语句，用来操作elasticsearch，实现CRUD |
 
 
 **Mysql**：擅长事务类型操作，可以确保数据的安全和一致性

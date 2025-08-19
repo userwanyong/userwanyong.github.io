@@ -4,6 +4,8 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide, onMounted } from 'vue'
+import bsz from "./bsz.vue"
+import backtotop from "./backtotop.vue"
 
 const { isDark } = useData()
 
@@ -69,7 +71,12 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <div class="bubble"></div>
   </div>
   <DefaultTheme.Layout>
-    <!-- 这里可以插入其他插槽组件 -->
+    <template #doc-footer-before>
+      <backtotop />
+    </template>
+    <template #layout-bottom>
+      <bsz />
+    </template>
   </DefaultTheme.Layout>
 </template>
 

@@ -86,8 +86,8 @@ git config --global user.email "your_email"
 | `git clone username@host:/path/to/repository`             | 拉取远程仓库            |
 | `git remote add origin username@host:/path/to/repository` | 将本地仓库连接到远程仓库      |
 | `git push origin <branch>`                                | 上传远程代码            |
-| `git fetch`                                               | 从远程获取代码           |
-| `git pull`                                                | 更新代码（fetch并merge） |
+| `git fetch origin <branch>`                               | 从远程获取代码           |
+| `git pull origin <branch>`                                | 更新代码（fetch并merge） |
 | `git submodule`                                           | 管理包含其他git仓库的项目    |
 
 #### 4.3. 个性化git

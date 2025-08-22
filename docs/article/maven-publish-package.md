@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/-Gpg-8A2BE2" alt="" style="display: inline-block;margin-right: 2px"/> 
 
 ## 1. 注册 sonatype 账号
-<Linkcard url="https://central.sonatype.com/publishing/namespaces" title="注册 sonatype 账号" description="https://central.sonatype.com/publishing/namespaces" logo="../public/article/sonatype.png"></Linkcard>
+<Linkcard url="https://central.sonatype.com/publishing/namespaces" title="注册 sonatype 账号" description="https://central.sonatype.com/publishing/namespaces" logo="https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/sonatype.png"></Linkcard>
 
 ## 2. 创建 namespace
 如果你使用 github 账号登录，默认会有一个命名空间 eg. `io.github.userwanyong`
@@ -12,35 +12,35 @@
 如果你有自己的域名并且想要自定义 namespace 的话，继续往下看
 
 ### 2.1. 点击创建
-![](../public/article/namespace.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/namespace.png)
 
 ### 2.2. 填写域名的反写 
 例如`cn.wanyj.component`
 
-![](../public/article/register.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/register.png)
 ### 2.3. 验证域名
 
-![](../public/article/verify.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/verify.png)
 
 需要在对应的厂商的域名控制台添加txt记录
 
 可参考 https://central.sonatype.org/faq/how-to-set-txt-record/#question
 
-![](../public/article/record.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/record.png)
 
 耐心等待几分钟就成功了
 
-![](../public/article/success.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/success.png)
 
 ## 3. 安装配置 gpg
 作用：对上传的文件进行加密签名
 
 ### 3.1. 下载安装 gpg
-<Linkcard url="https://gpg4win.org/download.html" title="win 下载地址" description="https://gpg4win.org/download.html" logo="../public/common.png"></Linkcard>
-<Linkcard url="https://gpgtools.org/" title="mac 下载地址" description="https://gpgtools.org/" logo="../public/common.png"></Linkcard>
+<Linkcard url="https://gpg4win.org/download.html" title="win 下载地址" description="https://gpg4win.org/download.html" logo="https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/common.png"></Linkcard>
+<Linkcard url="https://gpgtools.org/" title="mac 下载地址" description="https://gpgtools.org/" logo="https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/common.png"></Linkcard>
 直接用它默认的下载安装即可
 
-![](../public/article/err.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/err.png)
 
 ### 3.2. 这里也是出现错误了，不用管他，直接用命令行操作
 
@@ -51,13 +51,13 @@
   
 然后会出现
 
-![](../public/article/passphrase.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/passphrase.png)
 
 这里输入密钥，一定要记住！！！
 
 然后返回命令行你会看到公钥`845B36F77655AACF5FB11312BB0D52AF86C349D1`
 
-![](../public/article/cmd.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/cmd.png)
 
 如果以后你想查看已经生成过的密钥信息，在命令行输入`gpg --list-keys`即可
 
@@ -76,15 +76,15 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 845B36F77655AACF5FB11312BB0D52A
 
 出现下图信息即代表成功了
 
-![](../public/article/recv.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/recv.png)
 
 
 ### 3.3. 配置 setting.xml 文件
 <Linkcard url="https://central.sonatype.com/account" title="生成 token" description="https://central.sonatype.com/account" logo="../public/common.png"></Linkcard>
 
-![](../public/article/setting1.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/setting1.png)
 
-![](../public/article/setting2.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/setting2.png)
 
 然后将以上配置放到你的setting.xml文件中，举例如下
 ::: code-group
@@ -270,10 +270,10 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 845B36F77655AACF5FB11312BB0D52A
   - central-publishing-maven-plugin 插件用于推送包到 Maven Central
 
 ## 5. 点击 deploy 发布
-![](../public/article/deploy.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/deploy.png)
 
 期间会让你输入`<keyname>`对应的密钥，就是你上面第三步中配置的那个，填上即可
 
 至此，恭喜你，成功将jar包发布到了maven中央仓库！
 
-![](../public/article/publish.png)
+![](https://cdn.jsdelivr.net/gh/userwanyong/picture-bed/my-blog/publish.png)

@@ -30,7 +30,7 @@
 .vp-code-group div[class*="language-"].vp-adaptive-theme.line-numbers-mode {
     border-radius: 8px;
     box-shadow: none;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 /* 代码组：隐藏小圆点 */
@@ -55,7 +55,7 @@
 .vp-code-group div[class*="language-"].vp-adaptive-theme {
     border-radius: 8px;
     box-shadow: none;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 /* 代码组（无行号）：隐藏小圆点 */

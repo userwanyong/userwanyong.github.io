@@ -90,7 +90,9 @@ export default defineConfig({
                 text: '我的文章',
                 items: [
                     {text: '自定义 Spring Boot Starter', link: '/article/custom-spring-boot-starter'},
-                    {text: 'Maven 发包', link: '/article/maven-publish-package'},
+                    {text: 'Maven 自动发包', link: '/article/maven-publish-package'},
+                    {text: 'Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
+                    {text: 'Github Page 自定义域名', link: '/article/github-page'},
                 ]
             },
             {
@@ -151,7 +153,9 @@ export default defineConfig({
                     collapsed: false,
                     items: [
                         {text: '自定义 Spring Boot Starter', link: '/article/custom-spring-boot-starter'},
-                        {text: 'Maven 发包', link: '/article/maven-publish-package'},
+                        {text: 'Maven 自动发包', link: '/article/maven-publish-package'},
+                        {text: 'Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
+                        {text: 'Github Page 自定义域名', link: '/article/github-page'},
                     ]
                 }
             ],

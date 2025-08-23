@@ -85,58 +85,58 @@ export default defineConfig({
             label: '大纲' // 替换 On this page
         },
         nav: [
-            {text: '我的主页', link: '/'},
+            {text: '🏠 我的主页', link: '/'},
             {
-                text: '我的文章',
+                text: '📚 我的文章',
                 items: [
-                    {text: '自定义 Spring Boot Starter', link: '/article/custom-spring-boot-starter'},
-                    {text: 'Maven 自动发包', link: '/article/maven-publish-package'},
-                    {text: 'Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
-                    {text: 'Github Page 自定义域名', link: '/article/github-page'},
+                    {text: '📘 自定义 Spring Boot Starter', link: '/article/custom-spring-boot-starter'},
+                    {text: '📗 Maven 自动发包', link: '/article/maven-publish-package'},
+                    {text: '📙 Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
+                    {text: '📕 Github Page 自定义域名', link: '/article/github-page'},
                 ]
             },
             {
-                text: '技术文档',
+                text: '📝 技术文档',
                 items: [
                     {
-                        text: '中间件',
+                        text: '📂 中间件',
                         items: [
-                            {text: 'Elasticsearch', link: '/study/component/elasticsearch'},
-                            {text: 'RabbitMQ', link: '/study/component/rabbitmq'},
-                            {text: 'Xxl-job', link: '/study/component/xxl-job'},
+                            {text: '🔍 Elasticsearch', link: '/study/component/elasticsearch'},
+                            {text: '🔍 RabbitMQ', link: '/study/component/rabbitmq'},
+                            {text: '🔍 Xxl-job', link: '/study/component/xxl-job'},
                         ]
                     },
                     {
-                        text: '数据库',
+                        text: '📂 数据库',
                         items: [
-                            {text: 'Mysql', link: '/study/database/mysql'},
-                            {text: 'Redis', link: '/study/database/redis'},
+                            {text: '🔍 Mysql', link: '/study/database/mysql'},
+                            {text: '🔍 Redis', link: '/study/database/redis'},
                         ]
                     },
                     {
-                        text: '实用工具',
+                        text: '📂 实用工具',
                         items: [
-                            {text: 'Git', link: '/study/util/git'},
+                            {text: '🔍 Git', link: '/study/util/git'},
                         ]
                     },
                 ],
             },
             {
-                text: '项目经历',
+                text: '🚴 项目经历',
                 items: [
                     {
-                        text: '项目',
+                        text: '🔗 项目',
                         items: [
-                            {text: '营动空间', link: '/experience/project/marketing'},
-                            {text: 'MCP 服务中心', link: '/experience/project/mcp-server'},
-                            {text: 'AI-Agent', link: '/experience/project/ai-agent'},
+                            {text: '🍎 营动空间', link: '/experience/project/marketing'},
+                            {text: '🍏 MCP 服务中心', link: '/experience/project/mcp-server'},
+                            {text: '🍑 AI-Agent', link: '/experience/project/ai-agent'},
                         ]
                     },
                     {
-                        text: '组件',
+                        text: '🔧 组件',
                         items: [
-                            {text: 'DCC 动态配置中心', link: '/experience/component/dcc'},
-                            {text: '设计模式框架', link: '/experience/component/design-framework'},
+                            {text: '🍩 DCC 动态配置中心', link: '/experience/component/dcc'},
+                            {text: '🍪 设计模式框架', link: '/experience/component/design-framework'},
                         ]
                     },
                 ],

@@ -36,8 +36,8 @@
 作用：对上传的文件进行加密签名
 
 ### 3.1. 下载安装 gpg
-<Linkcard url="https://gpg4win.org/download.html" title="win 下载地址" description="https://gpg4win.org/download.html" logo="![202508231213971.png](../public/article/202508231213971.png)"></Linkcard>
-<Linkcard url="https://gpgtools.org/" title="mac 下载地址" description="https://gpgtools.org/" logo="![202508231213971.png](../public/article/202508231213971.png)"></Linkcard>
+<Linkcard url="https://gpg4win.org/download.html" title="win 下载地址" description="https://gpg4win.org/download.html" logo="https://blog-1375280847.cos.ap-beijing.myqcloud.com/images/202508231213971.png"></Linkcard>
+<Linkcard url="https://gpgtools.org/" title="mac 下载地址" description="https://gpgtools.org/" logo="https://blog-1375280847.cos.ap-beijing.myqcloud.com/images/202508231213971.png"></Linkcard>
 直接用它默认的下载安装即可
 
 ![202508231205799.png](../public/article/202508231205799.png)
@@ -80,7 +80,7 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 845B36F77655AACF5FB11312BB0D52A
 
 
 ### 3.3. 配置 setting.xml 文件
-<Linkcard url="https://central.sonatype.com/account" title="生成 token" description="https://central.sonatype.com/account" logo="![202508231213971.png](../public/article/202508231213971.png)"></Linkcard>
+<Linkcard url="https://central.sonatype.com/account" title="生成 token" description="https://central.sonatype.com/account" logo="https://blog-1375280847.cos.ap-beijing.myqcloud.com/images/202508231213971.png"></Linkcard>
 
 ![202508231209369.png](../public/article/202508231209369.png)
 

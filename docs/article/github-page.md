@@ -78,7 +78,7 @@
 我们在翻文档的时候是不是还有个验证自定义域啊，我们来看看
 
 <Linkcard url="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
-" title="点击查看文档" description="https://docs.github.com/en/pages" logo="https://blog-1375280847.cos.ap-beijing.myqcloud.com/images/202508231213971.png"></Linkcard>
+" title="点击查看文档" description="https://docs.github.com/en/pages" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
 ![202508231318415.png](../public/article/202508231318415.png)
 

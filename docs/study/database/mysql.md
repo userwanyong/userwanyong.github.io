@@ -76,7 +76,7 @@ MySQL 的默认端口号是3306
 #### 3.1.2. 表
 `数据类型`
 
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502272203291.png)
+![202502272203291.png](../../public/study/202502272203291.png)
 >[!WARNING] char 与 varchar 的区别
 >char(5),最多存5字符，不足5个，也占用5个
 > 

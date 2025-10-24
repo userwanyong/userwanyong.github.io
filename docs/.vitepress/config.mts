@@ -93,6 +93,7 @@ export default defineConfig({
                     {text: '📗 Maven 自动发包', link: '/article/maven-publish-package'},
                     {text: '📙 Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
                     {text: '📕 Github Page 自定义域名', link: '/article/github-page'},
+                    {text: '📗 EdgeOne 免费 CDN', link: '/article/edgeone-cdn'},
                 ]
             },
             {
@@ -156,6 +157,7 @@ export default defineConfig({
                         {text: 'Maven 自动发包', link: '/article/maven-publish-package'},
                         {text: 'Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
                         {text: 'Github Page 自定义域名', link: '/article/github-page'},
+                        {text: 'EdgeOne 免费 CDN', link: '/article/edgeone-cdn'},
                     ]
                 }
             ],

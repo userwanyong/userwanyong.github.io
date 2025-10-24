@@ -92,3 +92,5 @@
 2. 如果你使用的是 github page 部署，并使用了自己的域名（ `www.wanyj.cn` ），那么你访问根域名 `wanyj.cn` 的时候，也会跳转到 `www.wanyj.cn` ，因为 github 服务器会进行301重定向
 
 ![img.png](../public/article/img.png)
+
+3. 如需配置免费 CDN 加速，请看下一节 [EdgeOne 免费 CDN](https://www.wanyj.cn/article/edgeone-cdn)

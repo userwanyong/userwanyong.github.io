@@ -68,7 +68,7 @@ xxl.job.logretentiondays=30
 
 默认账号/密码 ：admin/123456
 
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1726910151106-a176f374-906e-450e-b924-543e615bb7fb.png)
+![1726910151106-a176f374-906e-450e-b924-543e615bb7fb.png](../../public/study/1726910151106-a176f374-906e-450e-b924-543e615bb7fb.png)
 
 ### 2.3. 配置部署“执行器项目”
 "执行器"项目：xxl-job-executor-sample-springboot 
@@ -133,7 +133,7 @@ public XxlJobSpringExecutor xxlJobExecutor() {
 #### 2.4.1. 新建任务
 登录调度中心-->任务管理-->新增
 
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1726911348506-0db88aed-0ab4-4aea-b90b-191ad9b5971c.png)
+![1726911348506-0db88aed-0ab4-4aea-b90b-191ad9b5971c.png](../../public/study/1726911348506-0db88aed-0ab4-4aea-b90b-191ad9b5971c.png)
 
 + **执行器**：每个任务必须绑定一个执行器, 方便给任务进行分组
 + **任务描述**：任务的描述信息，便于任务管理
@@ -166,7 +166,7 @@ public XxlJobSpringExecutor xxlJobExecutor() {
 #### 2.4.2. “GLUE模式(Java)” 任务开发
 操作-->GLUE IDE
 
- ![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1726911462682-f943ea23-a680-4a04-b6ff-e3f793a1919d.png)
+ ![1726911462682-f943ea23-a680-4a04-b6ff-e3f793a1919d.png](../../public/study/1726911462682-f943ea23-a680-4a04-b6ff-e3f793a1919d.png)
 
 “GLUE模式(Java)” 运行模式的任务默认已经初始化了示例任务代码，即打印Hello World
 
@@ -179,7 +179,7 @@ public XxlJobSpringExecutor xxlJobExecutor() {
 
 最后查看调度日志确认是否成功
 
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1726971817706-a6eecd45-33d7-46f9-8524-7bb0071b77a5.png)
+![1726971817706-a6eecd45-33d7-46f9-8524-7bb0071b77a5.png](../../public/study/1726971817706-a6eecd45-33d7-46f9-8524-7bb0071b77a5.png)
 
 ## 3. 安装
 
@@ -547,7 +547,7 @@ networks:
 :::
 
 ### 4.2. 加入XxlJobConfig配置类
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1726972731230-213af827-a5bd-47b1-9be3-62fe453e3cf0.png)
+![1726972731230-213af827-a5bd-47b1-9be3-62fe453e3cf0.png](../../public/study/1726972731230-213af827-a5bd-47b1-9be3-62fe453e3cf0.png)
 
 ::: code-group
 ```java
@@ -651,7 +651,7 @@ xxl:
 
 ### 4.4. 使用GLUE(Java)模式
 #### 4.4.1. 新建执行器
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1726973632793-1fa3d961-e350-4fc5-91b5-99ca263057ec.png)
+![1726973632793-1fa3d961-e350-4fc5-91b5-99ca263057ec.png](../../public/study/1726973632793-1fa3d961-e350-4fc5-91b5-99ca263057ec.png)
 
 #### 4.4.2. 修改GLUE IDE中的代码
 以全量同步题目到es为例

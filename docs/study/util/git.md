@@ -17,7 +17,7 @@ Github、Gitlab、Gitee等
 <Linkcard url="https://git-scm.com/downloads" title="下载 git" description="https://git-scm.com/downloads" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181534772.png"></Linkcard>
 ### 3.2. 安装完成后打开`Git Bash`
 
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1753410123508-e7030231-9778-4129-a47a-89d9e481415e.png)
+![1753410123508-e7030231-9778-4129-a47a-89d9e481415e.png](../../public/study/1753410123508-e7030231-9778-4129-a47a-89d9e481415e.png)
 
 ### 3.3. 然后在命令行`Git Bash`中输入
 
@@ -35,7 +35,7 @@ git config --global user.email "your_email"
 
 公钥放github上
 
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/1730535145411-5ccc2727-71a1-455e-8067-d7d4d3246476.png)
+![1730535145411-5ccc2727-71a1-455e-8067-d7d4d3246476.png](../../public/study/1730535145411-5ccc2727-71a1-455e-8067-d7d4d3246476.png)
 
 + workspace：工作区
 + staging area：暂存区/缓存区

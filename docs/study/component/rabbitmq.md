@@ -92,7 +92,7 @@ docker run \
 
 ## 3. 基础知识
 ### 3.1. 基本概念
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-26%20135745.png)
+![屏幕截图 2025-02-26 135745.png](../../public/study/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-26%20135745.png)
 + **publisher**：生产者，发消息的一方
 + **consumer**：消费者，收消息的一方
 + **exchange**：交换机，将生产者发送的消息投递到队列（只能路由信息，无法存储，发送到队列后消息就没了）
@@ -109,24 +109,24 @@ docker run \
 `如果有多个消费者，队列默认给每个消费者的消息是平均的，后面有处理方式`
 
 1. **新建队列**
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261417546.png)
+![202502261417546.png](../../public/study/202502261417546.png)
 
 2. **绑定交换机**
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261418978.png)
+![202502261418978.png](../../public/study/202502261418978.png)
 
 3. **测试**
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419820.png)
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261419016.png)
+![202502261419820.png](../../public/study/202502261419820.png)
+![202502261419016.png](../../public/study/202502261419016.png)
 
 
 ## 5. 数据隔离
 一套mq会有多个项目使用，为使各个项目之间互不干扰，需要进行数据隔离
 
 1. **创建用户**（将管理权限分离）
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423236.png)
+![202502261423236.png](../../public/study/202502261423236.png)
 
 2. 登录新创建的用户，**创建虚拟主机**（将每个项目数据进行隔离）
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261423681.png)
+![202502261423681.png](../../public/study/202502261423681.png)
 
 ## 6. 在java中使用
 1. **引入依赖**
@@ -408,7 +408,7 @@ public void listenTopicQueue2(String msg){
 此时，两个队列都能收到，但要将`RoutingKey`改为china.weather则只有`lottery-topic-queue1`这个队列收到消息
 
 > **综上，以上三个交换机在功能上的包含关系为**
->![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261453029.png)
+>![202502261453029.png](../../public/study/202502261453029.png)
 
 
 ### 6.4. 配置消息转换器
@@ -615,7 +615,7 @@ RabbitMQ在3.6.0版本开始，添加了lazy queue模式；在3.12版本以后�
 **3.12.0版本之前配置惰性队列的方式**：（3.12.0之后无需配置，默认就是采用的惰性队列）
 
 **控制台**：
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261500634.png)
+![202502261500634.png](../../public/study/202502261500634.png)
 
 **java代码**：
 
@@ -831,7 +831,7 @@ public class SpringRabbitListener {
 
 通过借助死信交换机，我们就能实现消息的延迟发送的效果
 就是让队列1不绑定消费者而是绑定一个死信交换机，这样消息达到了过期时间，就会进入死信交换机，然后传递到队列2，再发给消费者。注意如果设置了 RoutingKey 则必须保证两个交换机与队列的绑定关系的 RoutingKey 一致
-![](https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202502261504102.png)
+![202502261504102.png](../../public/study/202502261504102.png)
 
 `1、创建普通交换机与队列及其绑定关系`
 ::: code-group

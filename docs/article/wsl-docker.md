@@ -5,7 +5,7 @@
 
 
 ## 1. 安装 wsl
-<Linkcard url="https://learn.microsoft.com/zh-cn/windows/wsl/install" title="相关文档" description="https://learn.microsoft.com" logo="../public/article/202508231213971.png"></Linkcard>
+<Linkcard url="https://learn.microsoft.com/zh-cn/windows/wsl/install" title="相关文档" description="https://learn.microsoft.com" logo="![202508231213971.png](../public/article/202508231213971.png)"></Linkcard>
 
 ### 1.1. 环境准备
 **step1**：本机搜索可选功能
@@ -56,7 +56,7 @@ wsl --unregister Ubuntu
 :::
 
 ## 2. 安装 docker desktop
-<Linkcard url="https://docs.docker.com/desktop/features/wsl/" title="相关文档" description="https://docs.docker.com" logo="../public/article/202508231213971.png"></Linkcard>
+<Linkcard url="https://docs.docker.com/desktop/features/wsl/" title="相关文档" description="https://docs.docker.com" logo="![202508231213971.png](../public/article/202508231213971.png)"></Linkcard>
 
 
 **step1**：下载安装包

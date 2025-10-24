@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/-Gpg-8A2BE2" alt="" style="display: inline-block;margin-right: 2px"/> 
 
 ## 1. 注册 sonatype 账号
-<Linkcard url="https://central.sonatype.com/publishing/namespaces" title="注册 sonatype 账号" description="https://central.sonatype.com" logo="![sonatype.png](../public/article/sonatype.png)"></Linkcard>
+<Linkcard url="https://central.sonatype.com/publishing/namespaces" title="注册 sonatype 账号" description="https://central.sonatype.com" logo="https://blog-1375280847.cos.ap-beijing.myqcloud.com/images/sonatype.png"></Linkcard>
 
 ## 2. 创建 namespace
 如果你使用 github 账号登录，默认会有一个命名空间 eg. `io.github.userwanyong`

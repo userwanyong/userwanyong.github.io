@@ -54,7 +54,7 @@
 
 其实这不影响你的正常访问，但看着好难受啊
 
-解决方法：再添加一条 dns 解析，将根域名解析到 github page 的服务器即可
+解决方法：再添加一条 dns 解析，将根域名 `wanyj.cn` 解析到 github page 的服务器即可
 
 点击文档，看看他给你的主机地址是多少
 
@@ -89,7 +89,7 @@
 ## 4. 注意点
 1. 如果在此过程中还是有警告/错误，你可以尝试将以上操作都完成，也就是配置3条 dns 记录（step4、step5、验证域）
 这样不用在意顺序，反正你都配置了，最终结果是一样的
-2. 如果你使用的是 github page 部署，并使用了自己的域名（ `www.wanyj.cn` ），那么你访问根域名 `wanyj.cn` 的时候，也会跳转到 `www.wanyj.cn` ，因为 github 服务器会进行301重定向
+2. 如果你配置了 `自定义域` ，github page 配置的域名是 `www.wanyj.cn` ，那么你访问根域名 `wanyj.cn` 的时候，也会跳转到 `www.wanyj.cn` ，因为 github 服务器会进行301重定向
 
 ![img.png](../public/article/img.png)
 

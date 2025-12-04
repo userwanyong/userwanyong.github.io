@@ -17,30 +17,30 @@ hero:
       link: https://github.com/userwanyong
 
 features:
-  - icon: 🔍
-    title: Elasticsearch
-    details: 强大的分布式搜索和分析引擎，让数据检索变得简单高效
-    link: /study/component/elasticsearch
-  - icon: 🐰
-    title: RabbitMQ
-    details: 可靠的消息队列中间件，解决系统间的异步通信问题
-    link: /study/component/rabbitmq
-  - icon: 🗄️
-    title: MySQL
-    details: 流行的关系型数据库，掌握核心技能和优化技巧
-    link: /study/database/mysql
-  - icon: ⚡
-    title: Redis
-    details: 高性能的内存数据库，加速应用响应和数据缓存
-    link: /study/database/redis
   - icon: 📚
-    title: Xxl-job
-    details: 轻量级的分布式任务调度平台
-    link: /study/component/xxl-job
+    title: 文章专栏
+    details: Maven 发包、自定义 Spring Boot Starter等
+    link: /article/custom-spring-boot-starter
+  - icon: 📱
+    title: 项目专栏
+    details: 幸运补给站、灵犀AI助手、MCP服务中心等
+    link: /experience/project/marketing
   - icon: 🚀
-    title: 更多内容
-    details: 持续更新中，敬请期待...
-    link: /
+    title: 组件专栏
+    details: 动态配置中心、设计模式框架、动态限流组件等
+    link: /experience/component/dcc
+  - icon: 🐰
+    title: 中间件专栏
+    details: Elasticsearch、RabbitMQ、Xxl-job等
+    link: /study/component/elasticsearch
+  - icon: 🗄️
+    title: 数据库专栏
+    details: Mysql、Redis等
+    link: /study/database/mysql
+  - icon: 🔍
+    title: 实用工具专栏
+    details: Git等
+    link: /study/util/git
 ---
 
 <HomeUnderline />

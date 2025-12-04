@@ -128,9 +128,9 @@ export default defineConfig({
                     {
                         text: '🔗 项目',
                         items: [
-                            {text: '🍎 营动空间', link: '/experience/project/marketing'},
+                            {text: '🍎 幸运补给站', link: '/experience/project/marketing'},
+                            {text: '🍑 灵犀AI助手', link: '/experience/project/ai-agent'},
                             {text: '🍏 MCP 服务中心', link: '/experience/project/mcp-server'},
-                            {text: '🍑 AI-Agent', link: '/experience/project/ai-agent'},
                         ]
                     },
                     {
@@ -138,6 +138,7 @@ export default defineConfig({
                         items: [
                             {text: '🍩 DCC 动态配置中心', link: '/experience/component/dcc'},
                             {text: '🍪 设计模式框架', link: '/experience/component/design-framework'},
+                            {text: '🍰 动态限流组件', link: '/experience/component/rate-limiter'},
                         ]
                     },
                 ],
@@ -192,9 +193,9 @@ export default defineConfig({
                     text: '项目',
                     collapsed: false,
                     items: [
-                        {text: '营动空间', link: '/experience/project/marketing'},
+                        {text: '幸运补给站', link: '/experience/project/marketing'},
+                        {text: '灵犀AI助手', link: '/experience/project/ai-agent'},
                         {text: 'MCP 服务中心', link: '/experience/project/mcp-server'},
-                        {text: 'AI-Agent', link: '/experience/project/ai-agent'},
                     ]
                 },
                 {
@@ -203,6 +204,7 @@ export default defineConfig({
                     items: [
                         {text: 'DCC 动态配置中心', link: '/experience/component/dcc'},
                         {text: '设计模式框架', link: '/experience/component/design-framework'},
+                        {text: '动态限流组件', link: '/experience/component/rate-limiter'},
                     ]
                 }
             ],

@@ -19,6 +19,7 @@
 
 ![202508231202730.png](../public/article/202508231202730.png)
 ### 2.3. 验证域名
+> [!WARNING] 注意：下方图片中的域名应该为 cn.wanyj.component
 
 ![202508231202326.png](../public/article/202508231202326.png)
 

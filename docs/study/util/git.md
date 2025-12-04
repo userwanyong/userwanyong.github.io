@@ -106,14 +106,22 @@ git config --global user.email "your_email"
 
 ::: code-group
 ```bash
+# 0.初始化仓库
+git init
+
 # 1.克隆远程仓库
 git clone username@host:/path/to/repository
+
+# 1. 添加远程仓库
+git remote add origin username@host:/path/to/repository
 
 # 2.创建一个叫做feature_x的分支，并切换过去
 git checkout -b feature_x
 
 # 3.添加文件到暂存区
-git add <filename> / git add *
+git add <filename>
+or
+git add *
 
 # 4.提交
 git commit -m "代码提交信息"
@@ -129,6 +137,9 @@ git merge feature_x
 
 # 8.删除feature_x分支
 git branch -d feature_x
+
+# 9.更新主分支
+git pull origin master
 ```
 :::
 

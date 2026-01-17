@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/-模拟器-FF4500" alt="" style="display: inline-block;margin-right: 2px"/> 
 
 
-<Linkcard url="http://120.48.70.239:3636/" title="体验地址" description="http://120.48.70.239:3636/" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
+<Linkcard url="https://lingxi.wanyj.cn" title="体验地址" description="https://lingxi.wanyj.cn/" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
 ## 1. 项目介绍
 《灵犀助手》一个集成智能问答、日志分析、发帖通知、RAG问答、模拟器等功能的AI智能助手

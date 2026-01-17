@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/badge/-兑换-1E90FF" alt="" style="display: inline-block;margin-right: 2px"/> 
 
 
-<Linkcard url="http://115.190.238.109:3636/" title="体验地址" description="http://115.190.238.109:3636/" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
+<Linkcard url="https://xybjz.wanyj.cn" title="体验地址" description="https://xybjz.wanyj.cn" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
 ## 1. 项目介绍
 《幸运补给站》一个整合 抽奖/积分/兑换/返利/广播 等功能的平台

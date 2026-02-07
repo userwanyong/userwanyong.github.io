@@ -12,26 +12,26 @@
 如果你有自己的域名并且想要自定义 namespace 的话，继续往下看
 
 ### 2.1. 点击创建
-![202508231201810.png](../public/article/202508231201810.png)
+![202508231201810.png](../../public/article/202508231201810.png)
 
 ### 2.2. 填写域名的反写 
 例如`cn.wanyj.component`
 
-![202508231202730.png](../public/article/202508231202730.png)
+![202508231202730.png](../../public/article/202508231202730.png)
 ### 2.3. 验证域名
 > [!WARNING] 注意：下方图片中的域名应该为 cn.wanyj.component
 
-![202508231202326.png](../public/article/202508231202326.png)
+![202508231202326.png](../../public/article/202508231202326.png)
 
 需要在对应的厂商的域名控制台添加txt记录
 
 可参考 https://central.sonatype.org/faq/how-to-set-txt-record/#question
 
-![202508231203017.png](../public/article/202508231203017.png)
+![202508231203017.png](../../public/article/202508231203017.png)
 
 耐心等待几分钟就成功了
 
-![202508231203343.png](../public/article/202508231203343.png)
+![202508231203343.png](../../public/article/202508231203343.png)
 
 ## 3. 安装配置 gpg
 作用：对上传的文件进行加密签名
@@ -41,7 +41,7 @@
 <Linkcard url="https://gpgtools.org/" title="mac 下载地址" description="https://gpgtools.org/" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 直接用它默认的下载安装即可
 
-![202508231205799.png](../public/article/202508231205799.png)
+![202508231205799.png](../../public/article/202508231205799.png)
 
 ### 3.2. 这里也是出现错误了，不用管他，直接用命令行操作
 
@@ -52,13 +52,13 @@
   
 然后会出现
 
-![202508231206226.png](../public/article/202508231206226.png)
+![202508231206226.png](../../public/article/202508231206226.png)
 
 这里输入密钥，一定要记住！！！
 
 然后返回命令行你会看到公钥`845B36F77655AACF5FB11312BB0D52AF86C349D1`
 
-![202508231209759.png](../public/article/202508231209759.png)
+![202508231209759.png](../../public/article/202508231209759.png)
 
 如果以后你想查看已经生成过的密钥信息，在命令行输入`gpg --list-keys`即可
 
@@ -77,15 +77,15 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 845B36F77655AACF5FB11312BB0D52A
 
 出现下图信息即代表成功了
 
-![202508231209528.png](../public/article/202508231209528.png)
+![202508231209528.png](../../public/article/202508231209528.png)
 
 
 ### 3.3. 配置 setting.xml 文件
 <Linkcard url="https://central.sonatype.com/usertoken" title="生成 token" description="https://central.sonatype.com/usertoken" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/sonatype.png"></Linkcard>
 
-![202508231209369.png](../public/article/202508231209369.png)
+![202508231209369.png](../../public/article/202508231209369.png)
 
-![202508231210191.png](../public/article/202508231210191.png)
+![202508231210191.png](../../public/article/202508231210191.png)
 
 然后将以上配置放到你的setting.xml文件中，举例如下
 ::: code-group
@@ -271,10 +271,10 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 845B36F77655AACF5FB11312BB0D52A
   - central-publishing-maven-plugin 插件用于推送包到 Maven Central
 
 ## 5. 点击 deploy 发布
-![202508231210112.png](../public/article/202508231210112.png)
+![202508231210112.png](../../public/article/202508231210112.png)
 
 期间会让你输入`<keyname>`对应的密钥，就是你上面第三步中配置的那个，填上即可
 
 至此，恭喜你，成功将jar包发布到了maven中央仓库！
 
-![202508231211417.png](../public/article/202508231211417.png)
+![202508231211417.png](../../public/article/202508231211417.png)

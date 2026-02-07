@@ -20,13 +20,13 @@
 
 **step1**：进入你的 github 仓库，点击 settings->pages
 
-![202508231300156.png](../public/article/202508231300156.png)
+![202508231300156.png](../../public/article/202508231300156.png)
 
 **step2**：在 Custom domain 栏填写你申请到的域名
 
 这里我配置的是`www.wanyj.cn`，当然也可以用其他的`wanyj.cn`、`blog.wanyj.cn`等
 
-![202508231304685.png](../public/article/202508231304685.png)
+![202508231304685.png](../../public/article/202508231304685.png)
 
 **step3**：点击 Save 保存~
 
@@ -38,11 +38,11 @@
 
 点击添加记录
 
-![202508231305226.png](../public/article/202508231305226.png)
+![202508231305226.png](../../public/article/202508231305226.png)
 
 添加一个 CNAME 记录，主机记录填 www（如果你配置的是`blog.wanyj.cn`、则应该填 blog ，如果是`wanyj.cn`则填 @ ），请求来源默认即可，记录值就是你的 github page 提供的默认请求地址`userwanyong.github.io`，点击确定
 
-![202508231307038.png](../public/article/202508231307038.png)
+![202508231307038.png](../../public/article/202508231307038.png)
 
 等待几分钟后使用`www.wanyj.cn`就能访问到你的网站了
 
@@ -50,7 +50,7 @@
 
 但你回到 github page 界面，是不是又看到黄色警告了，如下图
 
-![202508231309220.png](../public/article/202508231309220.png)
+![202508231309220.png](../../public/article/202508231309220.png)
 
 其实这不影响你的正常访问，但看着好难受啊
 
@@ -58,7 +58,7 @@
 
 点击文档，看看他给你的主机地址是多少
 
-![202508231310921.png](../public/article/202508231310921.png)
+![202508231310921.png](../../public/article/202508231310921.png)
 
 可以看到这里他给了四个地址，我们没必要全配置，选一个配置就好了
 
@@ -68,11 +68,11 @@
 
 等他检查完，把 https 勾上，这样你就可以通过`https://www.wanyj.cn`访问了
 
-![202508231311579.png](../public/article/202508231311579.png)
+![202508231311579.png](../../public/article/202508231311579.png)
 
 返回到你的 github page 页面，一点警告都没有了，是不是很舒适 ^_^
 
-![202508231312111.png](../public/article/202508231312111.png)
+![202508231312111.png](../../public/article/202508231312111.png)
 
 ## 3. 验证域
 我们在翻文档的时候是不是还有个验证自定义域啊，我们来看看
@@ -80,7 +80,7 @@
 <Linkcard url="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
 " title="点击查看文档" description="https://docs.github.com/en/pages" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
-![202508231318415.png](../public/article/202508231318415.png)
+![202508231318415.png](../../public/article/202508231318415.png)
 
 大体意思就是输入你的根域名`wanyj.cn`后，会给你一串 txt 文本
 
@@ -91,6 +91,6 @@
 这样不用在意顺序，反正你都配置了，最终结果是一样的
 2. 如果你配置了 `自定义域` ，github page 配置的域名是 `www.wanyj.cn` ，那么你访问根域名 `wanyj.cn` 的时候，也会跳转到 `www.wanyj.cn` ，因为 github 服务器会进行301重定向
 
-![img.png](../public/article/img.png)
+![img.png](../../public/article/img.png)
 
 3. 如需配置免费 CDN 加速，请看下一节 [EdgeOne 免费 CDN](https://www.wanyj.cn/article/edgeone-cdn)

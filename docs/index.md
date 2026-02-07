@@ -20,7 +20,7 @@ features:
   - icon: 📚
     title: 文章专栏
     details: Maven 发包、自定义 Spring Boot Starter等
-    link: /article/custom-spring-boot-starter
+    link: /article/tutorial/custom-spring-boot-starter
   - icon: 📱
     title: 项目专栏
     details: 幸运补给站、灵犀AI助手、MCP服务中心等

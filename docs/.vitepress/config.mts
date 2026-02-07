@@ -55,7 +55,7 @@ export default defineConfig({
             provider: "local",
         },
         footer: {
-            message: '©2025 <a href="https://github.com/userwanyong">YONG</a>. All rights reserved.',
+            message: '©2026 <a href="https://github.com/userwanyong">YONG</a>. All rights reserved.',
             copyright: 'Contact me: 2026804718@qq.com</a>'
         },
         //侧边栏文字更改(移动端) 默认 Menu //
@@ -89,11 +89,23 @@ export default defineConfig({
             {
                 text: '📚 我的文章',
                 items: [
-                    {text: '📘 自定义 Spring Boot Starter', link: '/article/custom-spring-boot-starter'},
-                    {text: '📗 Maven 自动发包', link: '/article/maven-publish-package'},
-                    {text: '📙 Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
-                    {text: '📕 Github Page 自定义域名', link: '/article/github-page'},
-                    {text: '📗 EdgeOne 免费 CDN', link: '/article/edgeone-cdn'},
+                    {
+                        text: '🚅 教程',
+                        items: [
+                            {text: '📘 自定义 Spring Boot Starter', link: '/article/tutorial/custom-spring-boot-starter'},
+                            {text: '📗 Maven 自动发包', link: '/article/tutorial/maven-publish-package'},
+                            {text: '📙 Win11 安装 Wsl 与 Docker', link: '/article/tutorial/wsl-docker'},
+                            {text: '📕 Github Page 自定义域名', link: '/article/tutorial/github-page'},
+                            {text: '📗 EdgeOne 免费 CDN', link: '/article/tutorial/edgeone-cdn'},
+                        ]
+                    },
+                    {
+                        text: '🚉 八股小记',
+                        items: [
+                            {text: '📘 Java 八股汇总', link: '/article/eight-legged/java'},
+                            {text: '📗 Mysql 八股汇总', link: '/article/eight-legged/mysql'},
+                        ]
+                    }
                 ]
             },
             {
@@ -130,6 +142,7 @@ export default defineConfig({
                         items: [
                             {text: '🍎 幸运补给站', link: '/experience/project/marketing'},
                             {text: '🍑 灵犀AI助手', link: '/experience/project/ai-agent'},
+                            {text: '🍅 CC 交互式入门', link: '/experience/project/claude-code'},
                             {text: '🍏 MCP 服务中心', link: '/experience/project/mcp-server'},
                         ]
                     },
@@ -151,14 +164,22 @@ export default defineConfig({
         sidebar: {
             '/article/': [
                 {
-                    // text: '文章',
+                    text: '教程',
                     collapsed: false,
                     items: [
-                        {text: '自定义 Spring Boot Starter', link: '/article/custom-spring-boot-starter'},
-                        {text: 'Maven 自动发包', link: '/article/maven-publish-package'},
-                        {text: 'Win11 安装 Wsl 与 Docker', link: '/article/wsl-docker'},
-                        {text: 'Github Page 自定义域名', link: '/article/github-page'},
-                        {text: 'EdgeOne 免费 CDN', link: '/article/edgeone-cdn'},
+                        {text: '自定义 SpringBootStarter', link: '/article/tutorial/custom-spring-boot-starter'},
+                        {text: 'Maven 自动发包', link: '/article/tutorial/maven-publish-package'},
+                        {text: 'Win11 安装Wsl与Docker', link: '/article/tutorial/wsl-docker'},
+                        {text: 'Github Page 自定义域名', link: '/article/tutorial/github-page'},
+                        {text: 'EdgeOne 免费 CDN', link: '/article/tutorial/edgeone-cdn'},
+                    ]
+                },
+                {
+                    text: '八股小记',
+                    collapsed: false,
+                    items: [
+                        {text: 'Java 八股汇总', link: '/article/eight-legged/java'},
+                        {text: 'Mysql 八股汇总', link: '/article/eight-legged/mysql'},
                     ]
                 }
             ],
@@ -195,6 +216,7 @@ export default defineConfig({
                     items: [
                         {text: '幸运补给站', link: '/experience/project/marketing'},
                         {text: '灵犀AI助手', link: '/experience/project/ai-agent'},
+                        {text: 'CC 交互式入门', link: '/experience/project/claude-code'},
                         {text: 'MCP 服务中心', link: '/experience/project/mcp-server'},
                     ]
                 },

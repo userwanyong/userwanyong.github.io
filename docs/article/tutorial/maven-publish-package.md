@@ -81,7 +81,7 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 845B36F77655AACF5FB11312BB0D52A
 
 
 ### 3.3. 配置 setting.xml 文件
-<Linkcard url="https://central.sonatype.com/account" title="生成 token" description="https://central.sonatype.com/account" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/sonatype.png"></Linkcard>
+<Linkcard url="https://central.sonatype.com/usertoken" title="生成 token" description="https://central.sonatype.com/usertoken" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/sonatype.png"></Linkcard>
 
 ![202508231209369.png](../public/article/202508231209369.png)
 

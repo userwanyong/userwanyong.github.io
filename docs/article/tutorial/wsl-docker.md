@@ -1,13 +1,15 @@
 # Win11 安装 Wsl 与 Docker
+
 <img src="https://img.shields.io/badge/-Docker-2496ED?logo=Docker&logoColor=FFF" alt="Docker" style="display: inline-block;margin-right: 2px" /> 
 <img src="https://img.shields.io/badge/-Wsl-8A2BE2" alt="" style="display: inline-block;margin-right: 2px"/> 
-<img src="https://img.shields.io/badge/-Ubuntu-E95420?logo=Ubuntu&logoColor=FFF" alt="Ubuntu" style="display: inline-block;margin-right: 2px" /> 
-
+<img src="https://img.shields.io/badge/-Ubuntu-E95420?logo=Ubuntu&logoColor=FFF" alt="Ubuntu" style="display: inline-block;margin-right: 2px" />
 
 ## 1. 安装 wsl
+
 <Linkcard url="https://learn.microsoft.com/zh-cn/windows/wsl/install" title="相关文档" description="https://learn.microsoft.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
 ### 1.1. 环境准备
+
 **step1**：本机搜索可选功能
 
 ![202508231229452.png](../public/article/202508231229452.png)
@@ -23,9 +25,10 @@
 **step4**：重启电脑
 
 ### 1.2. 执行安装
+
 **step1**：win+r 输入 cmd 打开命令行
 
-**step2**：输入`wsl -install`安装（使用此命令默认是wsl2）
+**step2**：输入 `wsl --install`安装（使用此命令默认是wsl2）
 
 ![202508231234334.png](../public/article/202508231234334.png)
 
@@ -34,8 +37,10 @@
 ![202508231234022.png](../public/article/202508231234022.png)
 
 ### 1.3. 拓展
+
 默认wsl会安装在c盘，非常占空间，可以将wsl的安装目录修改到其他盘
 ::: code-group
+
 ```bash
 # 1.查看发行版名称
 wsl --list --verbose
@@ -53,11 +58,12 @@ wsl -d Ubuntu_New
 wsl --unregister Ubuntu
 # 5.直接删除backup文件夹（可选）
 ```
+
 :::
 
 ## 2. 安装 docker desktop
-<Linkcard url="https://docs.docker.com/desktop/features/wsl/" title="相关文档" description="https://docs.docker.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
+<Linkcard url="https://docs.docker.com/desktop/features/wsl/" title="相关文档" description="https://docs.docker.com" logo="https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/202508181539171.png"></Linkcard>
 
 **step1**：下载安装包
 

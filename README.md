@@ -9,7 +9,7 @@
 | 自定义 Spring Boot Starter | [自定义 Spring Boot Starter](https://www.wanyj.cn/article/tutorial/custom-spring-boot-starter) |
 | Maven 发包                 | [Maven 发包](https://www.wanyj.cn/article/tutorial/maven-publish-package)                      |
 | Win11 安装 Wsl 与 Docker   | [Win11 安装 Wsl 与 Docker](https://www.wanyj.cn/article/tutorial/wsl-docker)                   |
-| Github Page 自定义域名     | [Github Page 自定义域名](https://www.wanyj.cn/article/tutorial//github-page)                   |
+| Github Page 自定义域名     | [Github Page 自定义域名](https://www.wanyj.cn/article/tutorial/github-page)                   |
 | EdgeOne 免费 CDN           | [EdgeOne 免费 CDN](https://www.wanyj.cn/article/tutorial/edgeone-cdn)                          |
 
 ## 八股汇总

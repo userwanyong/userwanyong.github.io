@@ -47,7 +47,7 @@ export default defineConfig({
     title: "YONG",
     description: "这是我的博客",
     cleanUrls: true,// 清除.html后缀
-    lastUpdated: true,
+    // lastUpdated: true,
     themeConfig: {
         logo: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png',
         siteTitle: 'YONG',
@@ -68,13 +68,13 @@ export default defineConfig({
             text: '在GitHub编辑本页'
         },
         //上次更新时间 //
-        lastUpdated: {
-            text: '最后更新于',
-            formatOptions: {
-                dateStyle: 'medium', // 可选值full、long、medium、short
-                timeStyle: 'short' // 可选值full、long、medium、short
-            },
-        },
+        // lastUpdated: {
+        //     text: '最后更新于',
+        //     formatOptions: {
+        //         dateStyle: 'medium', // 可选值full、long、medium、short
+        //         timeStyle: 'short' // 可选值full、long、medium、short
+        //     },
+        // },
         //自定义上下页名 //
         docFooter: {
             prev: '上一章',

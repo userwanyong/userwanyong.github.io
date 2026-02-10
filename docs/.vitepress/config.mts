@@ -11,7 +11,7 @@ export default defineConfig({
         ['meta', { property: 'og:title', content: 'YONG - 技术博客与项目分享' }],
         ['meta', { property: 'og:description', content: '分享 Spring Boot、Java、数据库、中间件等技术文章，以及项目开发经验总结' }],
         ['meta', { property: 'og:image', content: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png' }],
-        ['meta', { property: 'og:url', content: 'https://userwanyong.github.io/' }],
+        ['meta', { property: 'og:url', content: 'https://www.wanyj.cn/' }],
         // Twitter Card
         ['meta', { name: 'twitter:card', content: 'summary' }],
         ['meta', { name: 'twitter:title', content: 'YONG - 技术博客与项目分享' }],

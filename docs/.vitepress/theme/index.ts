@@ -16,6 +16,8 @@ import { watch } from 'vue';
 import HomeUnderline from "./components/HomeUnderline.vue"
 import confetti from "./components/confetti.vue"
 import ArticleMetadata from "./components/ArticleMetadata.vue"
+import ShareButton from "./components/ShareButton.vue"
+import FloatingShareButton from "./components/FloatingShareButton.vue"
 import busuanzi from 'busuanzi.pure.js'
 
 // 彩虹背景动画样式
@@ -30,6 +32,8 @@ export default {
         app.component('HomeUnderline' , HomeUnderline)
         app.component('confetti' , confetti)
         app.component('ArticleMetadata' , ArticleMetadata)
+        app.component('ShareButton' , ShareButton)
+        app.component('FloatingShareButton' , FloatingShareButton)
 
         if (inBrowser) {
             router.onAfterRouteChanged = () => {

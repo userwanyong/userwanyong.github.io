@@ -6,8 +6,14 @@ import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide, onMounted } from 'vue'
 import bsz from "./bsz.vue"
 import backtotop from "./backtotop.vue"
+import FloatingShareButton from "./FloatingShareButton.vue"
 
-const { isDark } = useData()
+const { isDark, page } = useData()
+
+// 判断是否是首页
+const isHomePage = () => {
+  return page.value.frontmatter.layout === 'home' || page.value.relativePath === 'index.md'
+}
 
 const enableTransitions = () => {
   if (typeof document === 'undefined' || typeof window === 'undefined') return false
@@ -78,6 +84,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       <bsz />
     </template>
   </DefaultTheme.Layout>
+  <FloatingShareButton v-if="isHomePage()" />
 </template>
 
 <style>

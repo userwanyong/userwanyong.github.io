@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "👋 Hi , I'm ~YONG~"
+  name: "👋 Hi , I'm ~ wanyj"
   text: "My Personal Tech Blog"
   tagline: "ogether探索技术的奥秘，共同进步"
   image:
@@ -42,7 +42,6 @@ features:
     details: Git等
     link: /study/util/git
 ---
-
 <HomeUnderline />
 <confetti />
 
@@ -68,8 +67,6 @@ features:
   <div class="bubble"></div>
   <div class="bubble"></div>
 </div>
-
-
 
 <style>
 
@@ -178,7 +175,7 @@ if (typeof window !== 'undefined') {
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     document.body.appendChild(cursor);
-    
+  
     // 添加鼠标跟随样式
     // const style = document.createElement('style');
     // style.textContent = `
@@ -201,29 +198,29 @@ if (typeof window !== 'undefined') {
     //   }
     // `;
     // document.head.appendChild(style);
-    
+  
     // 鼠标移动时更新光标位置
     document.addEventListener('mousemove', (e) => {
       cursor.style.left = e.clientX + 'px';
       cursor.style.top = e.clientY + 'px';
     });
-    
+  
     // 鼠标点击时添加动画效果
     document.addEventListener('mousedown', () => {
       cursor.classList.add('active');
     });
-    
+  
     document.addEventListener('mouseup', () => {
       cursor.classList.remove('active');
     });
-    
+  
       // 为链接添加悬停效果
     const links = document.querySelectorAll('a');
     links.forEach(link => {
       link.addEventListener('mouseenter', () => {
         cursor.classList.add('active');
       });
-      
+    
       link.addEventListener('mouseleave', () => {
         cursor.classList.remove('active');
       });
@@ -232,6 +229,3 @@ if (typeof window !== 'undefined') {
   });
 }
 </script>
-
-
-

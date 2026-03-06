@@ -7,14 +7,14 @@ export default defineConfig({
         ['link', {rel: 'icon', href: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png'}],
         // Open Graph
         ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:site_name', content: 'YONG的博客' }],
-        ['meta', { property: 'og:title', content: 'YONG - 技术博客与项目分享' }],
+        ['meta', { property: 'og:site_name', content: 'wanyj的博客' }],
+        ['meta', { property: 'og:title', content: 'wanyj - 技术博客与项目分享' }],
         ['meta', { property: 'og:description', content: '分享 Spring Boot、Java、数据库、中间件等技术文章，以及项目开发经验总结' }],
         ['meta', { property: 'og:image', content: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png' }],
         ['meta', { property: 'og:url', content: 'https://www.wanyj.cn/' }],
         // Twitter Card
         ['meta', { name: 'twitter:card', content: 'summary' }],
-        ['meta', { name: 'twitter:title', content: 'YONG - 技术博客与项目分享' }],
+        ['meta', { name: 'twitter:title', content: 'wanyj - 技术博客与项目分享' }],
         ['meta', { name: 'twitter:description', content: '分享 Spring Boot、Java、数据库、中间件等技术文章，以及项目开发经验总结' }],
         ['meta', { name: 'twitter:image', content: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png' }],
     ],
@@ -56,18 +56,18 @@ export default defineConfig({
         // },
     },
     base,
-    title: "YONG",
+    title: "独立象限",
     description: "这是我的博客",
     cleanUrls: true,// 清除.html后缀
     // lastUpdated: true,
     themeConfig: {
         logo: 'https://markdown-my.oss-cn-beijing.aliyuncs.com/picture/logo.png',
-        siteTitle: 'YONG',
+        siteTitle: '独立象限',
         search: {
             provider: "local",
         },
         footer: {
-            message: '©2026 <a href="https://github.com/userwanyong">YONG</a>. All rights reserved.',
+            message: '©2026 <a href="https://github.com/userwanyong">wanyj</a>. All rights reserved.',
             copyright: 'Contact me: 2026804718@qq.com</a>'
         },
         //侧边栏文字更改(移动端) 默认 Menu //
@@ -116,6 +116,8 @@ export default defineConfig({
                         items: [
                             {text: '📘 Java 八股汇总', link: '/article/eight-legged/java'},
                             {text: '📗 Mysql 八股汇总', link: '/article/eight-legged/mysql'},
+                            {text: '📕 SpringBoot 八股汇总', link: '/article/eight-legged/springboot'},
+                            {text: '📙 Redis 八股汇总', link: '/article/eight-legged/redis'},
                         ]
                     }
                 ]
@@ -192,6 +194,8 @@ export default defineConfig({
                     items: [
                         {text: 'Java 八股汇总', link: '/article/eight-legged/java'},
                         {text: 'Mysql 八股汇总', link: '/article/eight-legged/mysql'},
+                        {text: 'SpringBoot 八股汇总', link: '/article/eight-legged/springboot'},
+                        {text: 'Redis 八股汇总', link: '/article/eight-legged/redis'},
                     ]
                 }
             ],

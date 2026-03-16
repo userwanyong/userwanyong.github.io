@@ -28,10 +28,12 @@
 ![xybjz_login.png](../../public/experience/xybjz_login.png)
 ### 3.2. 活动页面
 ![xybjz_lottery.png](../../public/experience/xybjz_lottery.png)
-### 3.3. 引导页
+### 3.3. 操作指引
 ![xybjz_ydy.png](../../public/experience/xybjz_ydy.png)
 ### 3.4. 活动管理
 ![xybjz_hd.png](../../public/experience/xybjz_hd.png)
+
+![xybjz_hd_award.png](../../public/experience/xybjz_hd_award.png)
 ### 3.5. 抽奖管理
 ![xybjz_cjzh.png](../../public/experience/xybjz_cjzh.png)
 
@@ -61,10 +63,6 @@
 
 ![xybjz_cl_rule.png](../../public/experience/xybjz_cl_rule.png)
 
-![xybjz_cl_award.png](../../public/experience/xybjz_cl_award.png)
-
 ![xybjz_cl_tule_tree.png](../../public/experience/xybjz_cl_tule_tree.png)
 
-![xybjz_cl_rule_tree_node.png](../../public/experience/xybjz_cl_rule_tree_node.png)
-
-![xybjz_cl_rule_tree_line.png](../../public/experience/xybjz_cl_rule_tree_line.png)
+![xybjz_cl_bianpai.png](../../public/experience/xybjz_cl_bianpai.png)
